@@ -54,12 +54,12 @@ Under vintern 2018/2019 definieras grafiskt i programmet Figma designen för de 
 - Huvudmeny  
 - Sekundärmeny  
 - Vänstermeny  
-- Hitta på sidan
+- Hitta på sidan  
 
 **Styleguide version 0.2. Utveckling klar 19/12**
 Version 0.2 fokuserar på det som visas på en startsida 
   
-- Länkstig (Brödsmuleväg) 
+- Länkstig (Brödsmuleväg)
 - Knapp 
 - Sidfot  
 - Sidfot med loggor (ska användas för webbplatser som har gemensamma avsändare) 
@@ -72,7 +72,7 @@ Version 0.2 fokuserar på det som visas på en startsida
 - Nyhetsflöde 
 - Snabblänkar 
 - Herobild 
-- Viktigt meddelande
+- Viktigt meddelande  
   
 **Styleguide version 0.3. Utveckling klar 16/1 2019**
   
@@ -85,7 +85,7 @@ Version 0.2 fokuserar på det som visas på en startsida
 - Dokument 
 - Länkar - olika states 
 - Formulär 
-- Artikel (nyhet)
+- Artikel (nyhet)  
 
 **Styleguide version 1.0. Utveckling klar 23/1 2019** 
 När denna version är klar så räknar vi med att vi har version 1.0 av Styleguiden. 
