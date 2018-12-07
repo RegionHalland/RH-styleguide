@@ -49,15 +49,14 @@ $ in cmd: npm install gulp --global
 
 Under vintern 2018/2019 definieras grafiskt i programmet Figma designen för de komponenter som kommer att utrryckas som CSS här i Styleguiden. Exempel på den uppmärkning i HTML som krävs kommer också att tillgängliggöras. Planen för implementationen av CSS-delen här i Styleguiden är som följer: 
 
-**Styleguide version 0.1 - Utveckling klar 12/12** 
+**Styleguide version 0.1. Utveckling klar 12/12**
  
 - Huvudmeny  
 - Sekundärmeny  
 - Vänstermeny  
-- Hitta på sidan 
-  
-  
-**Styleguide version 0.2 - Utveckling klar 19/12**
+- Hitta på sidan
+
+**Styleguide version 0.2. Utveckling klar 19/12**
 Version 0.2 fokuserar på det som visas på en startsida 
   
 - Länkstig (Brödsmuleväg) 
@@ -73,9 +72,9 @@ Version 0.2 fokuserar på det som visas på en startsida
 - Nyhetsflöde 
 - Snabblänkar 
 - Herobild 
-- Viktigt meddelande 
+- Viktigt meddelande
   
-**Styleguide version 0.3 – Utveckling klar 16/1 2019**
+**Styleguide version 0.3. Utveckling klar 16/1 2019**
   
 - Bild och Bildtext 
 - Länklista (modul) 
@@ -86,10 +85,10 @@ Version 0.2 fokuserar på det som visas på en startsida
 - Dokument 
 - Länkar - olika states 
 - Formulär 
-- Artikel (nyhet) 
-  
-**Styleguide version 1.0 – Utveckling klar 23/1 2019** 
-När denna version är klar så räknar vi med att vi har version 1.0 av Styleguiden.  
+- Artikel (nyhet)
+
+**Styleguide version 1.0. Utveckling klar 23/1 2019** 
+När denna version är klar så räknar vi med att vi har version 1.0 av Styleguiden. 
   
 - Filtrering 
 - Metadatakomponent 
