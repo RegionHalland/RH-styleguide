@@ -1,6 +1,8 @@
-# Dist
+# Dist följer inte med stjärna /*
 dist/*
+
+# detta behåller folder och filen
 !dist/.gitkeep
 
-# Node Modules
+# Node Modules ignorera ddessa
 node_modules/*

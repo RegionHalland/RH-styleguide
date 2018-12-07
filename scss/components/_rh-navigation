@@ -1,0 +1,14 @@
+/* MEMO
+JOHN  7 DEC 2018
+
+*/
+
+
+.RH-nav__subheader {
+	color: $rh-main-font-color;	
+}
+
+.RH-nav__subheader-active {
+	color: $rh-main-font-color;	
+	border-bottom: 3px solid $rh-main-bgcolor;
+}
