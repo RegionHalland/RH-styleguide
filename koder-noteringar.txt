@@ -1,0 +1,36 @@
+
+
+Sträng anrop koder från settings
+SVG: #{$rh-icons-color} 
+
+
+
+
+// använd en annan class i en class - https://stackoverflow.com/questions/9560170/including-another-class-in-scss
+.myclass {
+  font-weight: bold;
+  font-size: 90px;
+}
+.myotherclass {  // detta använder .myclass
+  @extend .myclass;
+  color: #000000;
+}
+
+
+
+
+###########
+%base-class {
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.my-base-class {
+    @extend %base-class;
+}
+
+.my-class {
+    @extend %base-class;
+    margin-bottom: 40px;
+}

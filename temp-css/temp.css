@@ -10,7 +10,34 @@ VIssas delar ska in på scss KANSKE!
 Viktor eller nån får gå igenom detta.
 / JOHN
 
+
+// använd en annan class i en class - https://stackoverflow.com/questions/9560170/including-another-class-in-scss
+.myclass {
+  font-weight: bold;
+  font-size: 90px;
+}
+.myotherclass {  // detta använder .myclass
+  @extend .myclass;
+  color: #000000;
+}
+
+
 **/
+
+ 
+
+
+.temp{
+  cursor: pointer;
+  font-weight: bold;
+  background-color: 
+  text-align:left;
+text-decoration: underline;
+}
+
+
+/* ###################################################### */
+
 
 #__ba_panel {
   display: none;

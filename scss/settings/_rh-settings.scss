@@ -1,0 +1,29 @@
+/* JOHN.S START 10 DEC 2018
+Färgkoder från Frida figma
+****************************************************************
+Djupblå/base: #004890 
+Används på Link titel to subpage och m.fl
+
+*/
+
+// HUVUD TECKENSNITT
+$rh-main-font: 		Arial;
+
+// MAPPA LANKAR variabel i css:  background: url($get-path-to-assets/site/background.jpg) 
+// https://stackoverflow.com/questions/8608498/have-a-variable-in-images-path-in-sass
+$rh-icons: 							"/rh-cdn/icons";
+$rh-icons-bgcolor:					#D0E3F3; /* Havsblå/light, används till rund bakgrund för ikoner */
+$rh-icons-color: 					#004890; /* ikon streck/kontur färg Link to subpage Djupblå/base */
+
+
+// FONT  FÄRG
+$rh-main-color-subpage-title: 		#004890; /* Link to subpage Djupblå/base */
+$rh-main-color-subpage-content: 	#000000; /* text beskrevning */
+$rh-main-color-nav-title: 			#004890; /* Djupblå/base */
+$rh-main-color-nav-header:			#000000;
+$rh-main-color-content: 			#000000;
+
+// BAKGRUND 
+$rh-main-bgcolor: 					#004890; /* Djupblå/base */
+$rh-main-bordercolor: 				#004890;
+

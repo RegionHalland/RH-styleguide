@@ -1,4 +1,14 @@
-// Settings
+
+// REGION HALLAND ///////////////////////
+// MODIFERAT AV JOHN 10 DEC 2018
+@import 'settings/rh-settings';
+@import 'components/rh-box';
+@import 'components/rh-navigation';
+
+
+
+
+// Settings  STANDARD INSTÄLLNINGAR
 @import 'settings/settings';
 
 // Mixins
@@ -58,5 +68,4 @@
 @import 'components/search-header';
 @import 'components/search-result';
 @import 'components/featured-link';
-@import 'components/rh-box';
-@import 'components/rh-navigation';
+
