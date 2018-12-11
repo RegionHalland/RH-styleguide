@@ -15,6 +15,16 @@ $rh-icons: 							"/rh-cdn/icons";
 $rh-icons-bgcolor:					#D0E3F3; /* Havsblå/light, används till rund bakgrund för ikoner */
 $rh-icons-color: 					#004890; /* ikon streck/kontur färg Link to subpage Djupblå/base */
 
+// MENUS
+$rh-nav-fontsize-toplevel:			  1.5em; /* Font storlek för navmenu */
+$rh-nav-fontsize-sublevel:			  1em; /* Font storlek för navmenu */
+$rh-nav-border-parent:				#D1D1D1; /* Grey/Light */
+$rh-nav-bgcolor-parent-normal:		#004890; /* Djupblå/base */
+$rh-nav-parent-normal-textcolor: 	#ffffff;  
+
+$rh-nav-bgcolor-second-child: 		#ffffff;  
+$rh-icon-nav-bgcolor-second: 	    #F4F4F4; /* Grey/Lightest */
+
 
 // FONT  FÄRG
 $rh-main-color-subpage-title: 		#004890; /* Link to subpage Djupblå/base */
@@ -26,4 +36,5 @@ $rh-main-color-content: 			#000000;
 // BAKGRUND 
 $rh-main-bgcolor: 					#004890; /* Djupblå/base */
 $rh-main-bordercolor: 				#004890;
-
+$rh-subpage-bgcolor: 				#D0E3F3; /* Havsblå/light */
+$rh-box-bgcolor: 					     #61A2D8; /* Havsblå/base */	 

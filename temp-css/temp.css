@@ -28,6 +28,10 @@ Viktor eller nån får gå igenom detta.
 
 
 .temp{
+  vertical-align: middle;
+  position: absolute;
+  position: relative;
+  vertical-align: center;
   cursor: pointer;
   font-weight: bold;
   background-color: 
