@@ -1,5 +1,7 @@
 # Styleguide
 
+# Översikt (Kan endast nås inom Region nätet RHWLAN) - http://demo.regionhalland.se/rh-cdn/styleguide/style.php#
+
 Styleguide från december 2018 och framåt, tillgänglig för hela Region Halland
 
 <details><summary><strong>View styleguide structure</strong></summary>
