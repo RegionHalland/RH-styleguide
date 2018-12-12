@@ -1,6 +1,5 @@
 <?php 
 $folder = "/rh-cdn/styleguide";
-
 ?>
 
 
@@ -63,7 +62,8 @@ i {font-size: 0.7em;}
 
 	<a href='<?php echo $folder;?>/main.min.css'/><?php echo $folder;?>/main.min.css<?php echo "?v=".date("YmdHis");?></a>
 	<hr>
- 
+    <a href='/rh-cdn/icons/feather.min.js'/> /rh-cdn/icons/feather.min.js</a>
+<hr>
     <a href='/rh-cdn/javascript/rh-java.js'>/rh-cdn/javascript/rh-java.js<?php echo "?v=".date("YmdHis");?></a>
 <hr>
  <hr>
@@ -101,43 +101,21 @@ while($r<5){
 <hr>
 <i>RH-nav__navigation-card</i>
 <hr>
+        <?php 
+$r="";
+while($r<3){
+  $r++;?>
 <div class="col sm-col-3">
-
-<div class="RH-nav__navigation-card" title="Link to subpage">
-  <a href="#">
-    <div class="RH-nav__navigation-card--icon RH-icon__roundbg rh-bg-icon-subpage"><i class="RH-icon__size-standard" data-feather="arrow-right"></i></div>
-    <div class="RH-nav__navigation-card--title">Link to subpage</div>
-    <div class="RH-nav__navigation-card--content">This text describes the content that can be found on the subpage</div>
-  </a>
+      <div class="RH-nav__navigation-card" title="Link to subpage">
+          <a href="#">
+            <div class="RH-nav__navigation-card--icon RH-icon__roundbg rh-bg-icon-subpage"><i class="RH-icon__size-standard" data-feather="arrow-right"></i></div>
+            <h2 class="RH-nav__navigation-card--title">Link to subpage</h2>
+            <p class="RH-nav__navigation-card--content">This text describes the content that can be found on the subpage</p>
+          </a>
+      </div>
 </div>
-
-</div>
-
-<div class="col sm-col-1" > &nbsp;  &nbsp;</div>
-
-<div class="col sm-col-3">
-  <div class="RH-nav__navigation-card" title="Link to subpage">
-    <a href="#">
-    <div class="RH-nav__navigation-card--icon RH-icon__roundbg rh-bg-icon-subpage"><i class="RH-icon__size-standard" data-feather="arrow-right"></i></div>
-    <div class="RH-nav__navigation-card--title">Link to subpage</div>
-    <div class="RH-nav__navigation-card--content">This text describes the content that can be found on the subpage</div>
-    </a>
-</div>
-
-</div>
-
-<div class="col sm-col-1" > &nbsp;  &nbsp;</div>
-
-<div class="col sm-col-3">
-  <div class="RH-nav__navigation-card" title="Link to subpage">
-    <a href="#">
-    <div class="RH-nav__navigation-card--icon RH-icon__roundbg rh-bg-icon-subpage"><i class="RH-icon__size-standard" data-feather="arrow-right"></i></div>
-    <div class="RH-nav__navigation-card--title">Link to subpage</div>
-    <div class="RH-nav__navigation-card--content">This text describes the content that can be found on the subpage</div>
-    </a>
-</div>
-
-</div>
+  <div class="col sm-col-1" > &nbsp;  &nbsp;</div>
+<?php }######## while ?>
 
 <textarea> 
 <nav class="RH-nav__navigation-card" title="Link to subpage">
@@ -181,6 +159,11 @@ while($r<5){
    </a>
 </div>
 
+<i>RH-nav__second-child--sublevel</i>
+<div style="width:400px;" class="RH-nav__second-child--sublevel" title="Navigation/Sublevel">
+   <a href="#">Navigation/Sublevel</a>
+</div>
+
 <i>RH-nav__second-child--active</i>
 <div  style="width:400px;" class="RH-nav__second-child--active" title="Navigation/Child">
    <a href="#">Navigation/Child 1</a>
@@ -193,13 +176,7 @@ while($r<5){
    </a>
 </div>
 
-
-<i>RH-nav__second-child--active</i>
-<div  style="width:400px;" class="RH-nav__second-child--active" title="Navigation/Child/Active">
-   <a href="#">Navigation/Child/Active 2
-   <div class="RH-nav__icon RH-icon__roundbg bg-white"><i class="RH-icon__size-standard" data-feather="minus"></i></div>
-   </a>
-</div>
+ 
 <textarea> </textarea>
 
 
@@ -339,12 +316,6 @@ while($r<5){
       feather.replace()
     </script>
  
-
-<br>
-RH-icon-bg <br>
-<div class="RH-icon-bg">123</div> 
-
-
  
 <br><br><br><br>
 

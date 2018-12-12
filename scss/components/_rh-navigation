@@ -44,6 +44,7 @@ JOHN  7 DEC 2018
 }
 
 .RH-nav__navigation-card--content {
+	padding-right:35px;
 	font-size: 15px;
 	color:$rh-main-color-subpage-content;
 }
