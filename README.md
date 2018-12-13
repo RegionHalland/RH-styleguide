@@ -1,7 +1,7 @@
 # Styleguide
 
 # 13 dec 2012
-Kompliering kommer att bli main.rh.css innehåller enbart RH komponenter.
+Kompileringen kommer att bli main.rh.css innehåller enbart RH komponenter.
 
 
 # Översikt (Kan endast nås inom Region nätet RHWLAN) - http://demo.regionhalland.se/rh-cdn/styleguide/style.php#
