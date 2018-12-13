@@ -1,12 +1,16 @@
 
 // REGION HALLAND ///////////////////////
 // MODIFERAT AV JOHN 10 DEC 2018
+
 @import 'settings/rh-settings';
 @import 'components/rh-box';
 @import 'components/rh-navigation';
 
 
 
+/* JOHN
+STÄNGD FÖR ATT ENDAST KONSUMERA RH RH-Komponenter
+se filen rad 35 "gulpfile.babel.js" skapas fil main.rh.css 
 
 // Settings  STANDARD INSTÄLLNINGAR
 @import 'settings/settings';
@@ -69,3 +73,4 @@
 @import 'components/search-result';
 @import 'components/featured-link';
 
+*/

@@ -1,4 +1,4 @@
-<?php 
+<?php
 $folder = "/rh-cdn/styleguide";
 ?>
 
@@ -11,23 +11,25 @@ $folder = "/rh-cdn/styleguide";
 	<meta name="theme-color" content="#ffffff" />
 
 	<link rel='stylesheet' href='<?php echo $folder;?>/main.min.css<?php echo "?v=".date("YmdHis");?>' type='text/css' media='all' />
+	<link rel='stylesheet' href='<?php echo $folder;?>/main.rh.css<?php echo "?v=".date("YmdHis");?>' type='text/css' media='all' />
+
   <script type='text/javascript' src='/rh-cdn/javascript/rh-java.js<?php echo "?v=".date("YmdHis");?>'></script>
- 
- <!-- 
+
+ <!--
   https://feathericons.com/
 https://github.com/feathericons/feather#feather
  <script src="https://unpkg.com/feather-icons"></script>
  ikoner
 -->
- <script type='text/javascript' src='/rh-cdn/icons/feather.min.js'></script>
+ <script type='text/javascript' src='feather.min.js'></script>
 
 
- 
- 
+
+
 
 <style>
 body{ font-family: Arial; }
-textarea {width: 100%; height: 100px; 
+textarea {width: 100%; height: 100px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -61,8 +63,10 @@ i {font-size: 0.7em;}
 
 
 	<a href='<?php echo $folder;?>/main.min.css'/><?php echo $folder;?>/main.min.css<?php echo "?v=".date("YmdHis");?></a>
+<hr>
+<a href='<?php echo $folder;?>/main.rh.css'/><?php echo $folder;?>/main.rh.css<?php echo "?v=".date("YmdHis");?></a>
 	<hr>
-    <a href='/rh-cdn/icons/feather.min.js'/> /rh-cdn/icons/feather.min.js</a>
+    <a href='feather.min.js'/> /rh-cdn/icons/feather.min.js</a>
 <hr>
     <a href='/rh-cdn/javascript/rh-java.js'>/rh-cdn/javascript/rh-java.js<?php echo "?v=".date("YmdHis");?></a>
 <hr>
@@ -73,13 +77,13 @@ i {font-size: 0.7em;}
       <div class="">
 
       <ul class="list-reset flex">
-        <?php 
+        <?php
 $r="";
 while($r<5){
   $r++;
   if($r==2){$active="RH-nav__subheader--item--active";}else{$active="RH-nav__subheader--item";}
   ?> <li class="<?php echo $active;?>"> <?php echo $r;?>. Linkitem </li><li class="pr4"></li>
-    
+
 <?php }#while ?>
 
       </ul>
@@ -88,10 +92,10 @@ while($r<5){
 <textarea>
 <div>
       <ul class="list-reset flex">
-     <li> 
-      <div class="RH-nav__subheader--item">Linkitem</div> 
-      eller aktiv 
-      <div class="RH-nav__subheader--item--active">LinkitemAktiv</div> 
+     <li>
+      <div class="RH-nav__subheader--item">Linkitem</div>
+      eller aktiv
+      <div class="RH-nav__subheader--item--active">LinkitemAktiv</div>
     </li>
   </ul>
 </div>
@@ -101,10 +105,9 @@ while($r<5){
 <hr>
 <i>RH-nav__navigation-card</i>
 <hr>
-        <?php 
+<?php
 $r="";
-while($r<3){
-  $r++;?>
+while($r<3){  $r++;?>
 <div class="col sm-col-3">
       <div class="RH-nav__navigation-card" title="Link to subpage">
           <a href="#">
@@ -117,7 +120,7 @@ while($r<3){
   <div class="col sm-col-1" > &nbsp;  &nbsp;</div>
 <?php }######## while ?>
 
-<textarea> 
+<textarea>
 <nav class="RH-nav__navigation-card" title="Link to subpage">
   <a href="#">
     <div class="RH-nav__navigation-card--icon RH-icon__roundbg rh-bg-icon-subpage"><i class="RH-icon__size-standard" data-feather="arrow-right"></i></div>
@@ -133,7 +136,7 @@ while($r<3){
 <div style="width:400px;" class="RH-nav__second-parent" title="Secondary Navigation">
   <a href="#" class="RH-nav_second-parent-ahref">Navigation</a>
 </div>
-<textarea> 
+<textarea>
 <div class="RH-nav__second-parent" title="Secondary Navigation">
   <a href="#">Navigation</a>
 </div>
@@ -176,7 +179,7 @@ while($r<3){
    </a>
 </div>
 
- 
+
 <textarea> </textarea>
 
 
@@ -219,7 +222,7 @@ while($r<3){
 
 </div>
 
-<textarea> 
+<textarea>
 <div class="RH-nav__second-parent" title="Secondary Navigation">
    <a href="#">Navigation</a>
 </div>
@@ -282,15 +285,16 @@ while($r<3){
 
 
 <i>RH-nav__box--active</i>
+
 <div class="RH-nav__box--active" title="Navigation / Mobile fällbar box">
    <a href="#">Box with the content of the title</a>
    <div class="RH-nav__icon RH-icon__roundbg bg-white"><i class="color-havsbla-base RH-icon__size-standard" data-feather="minus"></i></div>
 </div>
-    <div class="RH-nav__box--content" id="contentbox-1">
+	<p class="RH-nav__box--content" id="contentbox-1">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
      <br>
      <a href="#" class="color-havsbla-base">Fäll ihop <i data-feather="chevron-up"></i></a>
-    </div>
+	 </p>
 
  <textarea> <div class="RH-nav__box--active" title="Navigation / Mobile fällbar box">
    <a href="#">Box with the content of the title</a>
@@ -302,12 +306,35 @@ while($r<3){
      <a href="#" class="color-havsbla-base">Fäll ihop <i data-feather="chevron-up"></i></a>
     </div></textarea>
 
-
-
 <hr>
+
+<h2>On Page Navigation</h2>
+<i>RH-nav-onpage__container</i>
+<nav class="RH-nav-onpage__container" style="width:300px;">
+	<h2 class="h4">Sidans innehåll</h2>
+	<ul>
+			 <li class="RH-nav-onpage__item--active"><a href="#" class="RH-nav-onpage__item--link">Lorem ipsum href</a></li>
+		<?php
+			$r="";
+			while($r<4){  $r++;?>
+			 <li class="RH-nav-onpage__item"><a href="#" class="RH-nav-onpage__item--link">Lorem ipsum href</a></li>
+		<?php }?>
+	</ul>
+</nav>
+
+ <textarea><nav class="RH-nav-onpage__container">
+ 	<h2 class="h4">Sidans innehåll</h2>
+ 	<ul>
+ 			 <li class="RH-nav-onpage__item--active"><a href="#" class="RH-nav-onpage__item--link">Lorem ipsum href</a></li>
+ 			 <li class="RH-nav-onpage__item"><a href="#" class="RH-nav-onpage__item--link">Lorem ipsum href</a></li>
+ 	</ul>
+ </nav></textarea>
+
+
+<hr><hr>
  feathericons<br>
 <!-- example icon -->
-<i data-feather="circle"></i>  
+<i data-feather="circle"></i>
 <i data-feather="eye"></i>
 <i data-feather="heart"></i>
 <i data-feather="feather"></i>
@@ -315,20 +342,10 @@ while($r<3){
     <script>
       feather.replace()
     </script>
- 
- 
+
+
 <br><br><br><br>
 
 </div> <!-- END top-->
 </body>
-</html>  
-
-
-
-
-
-
-
-
-
-
+</html>

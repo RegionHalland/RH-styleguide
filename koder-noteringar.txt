@@ -1,7 +1,7 @@
 
 
 Sträng anrop koder från settings
-SVG: #{$rh-icons-color} 
+SVG: #{$rh-icons-color}
 
 
 
@@ -19,7 +19,7 @@ SVG: #{$rh-icons-color}
 
 
 
-###########
+########### GLOBAL STRÄNG
 %base-class {
    width: 80%;
    margin-left: 10%;
