@@ -1,9 +1,17 @@
 /*
-7 dec 2018 - JOHN 
+7 dec 2018 - JOHN
 
 */
 
+.display-table{
+	position:relative;
+	display:table;}
 
-.RH-box {
-	font-size: 150em;
+/* BOX *****************************************************/
+.rh-box__container{
+	width: 100%;
+	font-family: $rh-main-font;
+	position:relative;
+	display:table;
+	ul{list-style:none;}
 }

@@ -4,21 +4,38 @@ JOHN  7 DEC 2018
 */
 
 
+.rh-nav__icon {/* standard global Placera ikonen till höger  */
+  	 position: absolute;
+  	 right:1%;top:2%;
+	  text-align:center;
+	  background-color: $rh-icon-nav-bgcolor-second;
+	  height: 30px;
+	  width: 30px;
+	  border-radius: 50%;
+	  display: inline-block;
+	  overflow:hidden;
+	  vertical-align: middle;
+	  cursor: pointer;
+}
+
+
+
+
 /* SubHeader *********************************************/
-.RH-nav__subheader {
+.rh-nav__subheader {
 	position: relative;
 	color: $rh-main-color-nav-header;
 }
 
-.RH-nav__subheader--item { /* meny knappen */
+.rh-nav__subheader--item { /* meny knappen */
 	text-align:left;
 	position: relative;
 	cursor:pointer;
 	color: $rh-main-color-nav-header;
-	&:hover{ @extend .RH-nav__subheader--item--active; }
+	&:hover{ @extend .rh-nav__subheader--item--active; }
 }
 
-.RH-nav__subheader--item--active { /* Aktiv underline */
+.rh-nav__subheader--item--active { /* Aktiv underline */
 	padding-right:6px;
 	text-align:left;
 	position: relative;
@@ -29,7 +46,7 @@ JOHN  7 DEC 2018
 
 
 /* Link to subpage **************************************/
-.RH-nav__navigation-card {
+.rh-nav__navigation-card {
     display: block;
 	cursour:pointer;
 	position:relative;
@@ -37,19 +54,19 @@ JOHN  7 DEC 2018
 	a:hover{ text-decoration: underline; cursor: pointer;}
 }
 
-.RH-nav__navigation-card--title {
+.rh-nav__navigation-card--title {
 	font-weight: bold;
 	font-size: 20px;
 	color:$rh-main-color-subpage-title;
 }
 
-.RH-nav__navigation-card--content {
+.rh-nav__navigation-card--content {
 	padding-right:35px;
 	font-size: 15px;
 	color:$rh-main-color-subpage-content;
 }
 
-.RH-nav__navigation-card--icon {
+.rh-nav__navigation-card--icon {
 	cursor:pointer;
 	position:absolute;
 	right:1%;
@@ -64,25 +81,25 @@ JOHN  7 DEC 2018
 /*  On Page Navigation ********************************
 ej klar 13 dec 2018
 */
-.RH-nav-onpage__container{
+.rh-nav-onpage__container{
 	position: relative;
 	ul{display: inline-block;width:100%;}
 	ul li{display: inline-block;width:100%;}
 }
-.RH-nav-onpage__item{
+.rh-nav-onpage__item{
 	width: 100%;
 	position: relative;
 	border-left: 3px solid #E4E4E4;/* Grey/Lighter */
-	&:hover{@extend .RH-nav-onpage__item--active;}
-	&:focus{@extend .RH-nav-onpage__item--active;}
+	&:hover{@extend .rh-nav-onpage__item--active;}
+	&:focus{@extend .rh-nav-onpage__item--active;}
 		a{display: block;}
 }
-.RH-nav-onpage__item--active{
+.rh-nav-onpage__item--active{
 	position: relative;
 	border-left: 3px solid $rh-nav-border-color;
 	border-bottom: 1px solid #e1e1e1;
 }
-.RH-nav-onpage__item--link{
+.rh-nav-onpage__item--link{
 	width: 100%;
 	padding: 10px;
 	font-size: 16px;
@@ -95,7 +112,7 @@ ej klar 13 dec 2018
 
 
 /* MENU NAVIGATION ************************************/
-.RH-nav__second-parent { /* A Parent */
+.rh-nav__second-parent { /* A Parent */
 	position: relative;
 	background: $rh-nav-bgcolor-parent-normal;
 	padding: 10px;
@@ -110,7 +127,7 @@ ej klar 13 dec 2018
 }
 
 
-.RH-nav__second-child { /*AB Child */
+.rh-nav__second-child { /*AB Child */
 	position: relative;
 	background: #FFF;
 	padding: 10px;
@@ -124,11 +141,11 @@ ej klar 13 dec 2018
 	  text-decoration: none;
 	  color: #000000;}
 
-	 &:hover{ @extend .RH-nav__second-child--active; }
+	 &:hover{ @extend .rh-nav__second-child--active; }
 }
 
 
-.RH-nav__second-child--active { /*AB Child */
+.rh-nav__second-child--active { /*AB Child */
 	position: relative;
 	background: #D0E3F3;
 	padding: 10px;
@@ -143,7 +160,7 @@ ej klar 13 dec 2018
 		color: #000000;}
 	}
 
-.RH-nav__second-child--sublevel { /*ABC Child/Sublevel */
+.rh-nav__second-child--sublevel { /*ABC Child/Sublevel */
 	position: relative;
 	background: #F5F8FB;
 	padding: 10px;
@@ -160,24 +177,15 @@ ej klar 13 dec 2018
 	}
 
 
-.RH-nav__icon {/* parent relative - Placera ikonen till höger  */
-  	 position: absolute;
-  	 right:1%;top:15%;
-	  text-align:center;
-	  background-color: $rh-icon-nav-bgcolor-second;
-	  height: 30px;
-	  width: 30px;
-	  border-radius: 50%;
-	  display: inline-block;
-	  overflow:hidden;
-	  vertical-align: middle;
-	  cursor: pointer;
-}
+
+
 
 
 /* Navigation / Mobile fällbar box  ***************/
+.rh-nav-mob__box--container { position: relative;}
+.rh-nav-mob__box--content {padding:10px;font-size:1em;}
 
-.RH-nav__box--normal {
+.rh-nav-mob__box--normal {
 	position: relative;
 	background: #F4F4F4; /* Grey/Lightest */
 	padding: 10px;
@@ -187,12 +195,12 @@ ej klar 13 dec 2018
 	font-size: $rh-nav-fontsize-sublevel;
 	border-left: 4px solid #61A2D8;
 
-	a{display: block;
-	  text-decoration: none;
-	  color: #000000;}
+			a{display: block;
+		  text-decoration: none;
+		  color: #000000;}
 }
 
-.RH-nav__box--active { /*AB */
+.rh-nav-mob__box--active { /*AB */
 	position: relative;
 	background: $rh-box-bgcolor; /* Havsblå/base */
 	padding: 10px;
@@ -204,58 +212,22 @@ ej klar 13 dec 2018
 	color:#FFFFFF;
 
 	a{display: block;
-	  text-decoration: none;
-	  color: #FFFFFF;}
+		text-decoration: none;
+		color: #FFFFFF;}
 }
-.RH-nav__box--content {padding:10px;font-size:1em;}
+/* end mobile fällbar box */
 
 
-
-
-
-/* IKONER ***************************
-https://feathericons.com/
-https://github.com/feathericons/feather#feather
-*/
-.RH-icon__bg{/* rund bakgrund till ikonen */
-  text-align:center;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
- }
-
- .RH-icon__roundbg{/* rundbakgrund till ikonen */
-  text-align:center;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
- }
-
-.RH-icon__size-standard {width:16px; height:16px;position: absolute;top:25%;left:22%;}
-.RH-icon__size-10 {width:10px; height:10px;}
-.RH-icon__size-16 {width:16px; height:16px;position: absolute;top:25%;left:22%;}
-.RH-icon__size-20 {width:20px; height:20px;}
-.RH-icon__size-30 {width:30px; height:30px;}
-.RH-icon__size-40 {width:40px; height:40px;}
-.RH-icon__size-50 {width:50px; height:50px;}
-
-
-/* BAKGRUND *********************************/
-.rh-bg-icon-subpage {background-color: $rh-subpage-bgcolor;}
-
-
-.bg-havsbla{background-color: #D0E3F3;} /* Havsblå/light */
-.bg-djupbla{background-color: #D0E3F3;} /* Djupblå/base */
-
-.bg-white{background-color:#FFF;}
-.bg-black{background-color:#000;}
-.bg-grey{background-color:#CCC;}
-.bg-grey-light{background-color:#e1e1e1;}
-
-
-/* rh COLOR *****************************************/
-.color-havsbla-base{color: #61A2D8;} /* Havsblå/base */
+/* ej klart 17 dec */
+.rh-nav-mob__subpage {
+	width: 100%;
+	border-top: 1px solid $rh-color-djupbla-light;
+	border-bottom: 1px solid $rh-color-djupbla-light;
+	padding: 10px;
+	background-color: $rh-color-havsbla-light;
+	font-family: $rh-main-font;
+	font-style: normal;
+	font-weight: bold;
+		a{display: block;}
+}
+.rh-nav-mob__subpage--link{	width: 100%;display: block; text-decoration: none; color: #000000;}

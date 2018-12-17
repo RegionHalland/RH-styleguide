@@ -1,0 +1,21 @@
+/* Detta bestämmer hur layouten ska se ut, font typ, stil, ram */
+
+body, html {font-family: $rh-main-font;}
+
+.body-stage{border: 2px dotted #FFFFCC;}
+
+
+/* rh COLOR *****************************************/
+.color-havsbla-base{color: #61A2D8;} /* Havsblå/base */
+.color-djupbla-light{color: #B2C8DE;} /* Djupblå/light */
+
+/* BAKGRUND *********************************/
+.bg-havsbla{background-color: #D0E3F3;} /* Havsblå/light */
+.bg-djupbla{background-color: #D0E3F3;} /* Djupblå/base */
+
+
+
+.bg-white{background-color:#FFF;}
+.bg-black{background-color:#000;}
+.bg-grey{background-color:#CCC;}
+.bg-grey-light{background-color:#e1e1e1;}

@@ -8,6 +8,10 @@ Används på Link titel to subpage och m.fl
 // HUVUD TECKENSNITT
 $rh-main-font: 		Arial;
 
+// Färg strang
+$rh-color-djupbla-light: #B2C8DE; /* Djupblå/light */
+$rh-color-havsbla-light: #D0E3F3; /* Havsblå/light */
+
 // MAPPA LANKAR variabel i css:  background: url($get-path-to-assets/site/background.jpg)
 // https://stackoverflow.com/questions/8608498/have-a-variable-in-images-path-in-sass
 //$rh-icons: 							"/rh-cdn/icons";
@@ -15,6 +19,8 @@ $rh-main-font: 		Arial;
 // ICONS FÄRGER & STORLEK
 $rh-icons-bgcolor:					#D0E3F3; /* Havsblå/light, används till rund bakgrund för ikoner */
 $rh-icons-color: 				   	#004890; /* ikon streck/kontur färg Link to subpage Djupblå/base */
+
+//
 
 // HEADER DESKTOP
 

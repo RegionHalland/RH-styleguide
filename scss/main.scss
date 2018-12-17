@@ -1,16 +1,19 @@
 
-// REGION HALLAND ///////////////////////
+// REGION HALLAND 0.1 ///////////////////////
 // MODIFERAT AV JOHN 10 DEC 2018
 
-@import 'settings/rh-settings';
-@import 'components/rh-box';
-@import 'components/rh-navigation';
+@import 'settings/rh-settings'; // string variablar for standard RH
+@import 'components/rh-header'; // body, color, background color
+@import 'components/rh-box'; // kolumer
+@import 'components/rh-navigation'; // menyer, desktop, mobile
+@import 'components/rh-icons'; // ikon utseeende
+
 
 
 
 /* JOHN
 STÄNGD FÖR ATT ENDAST KONSUMERA RH RH-Komponenter
-se filen rad 35 "gulpfile.babel.js" skapas fil main.rh.css 
+se filen rad 35 "gulpfile.babel.js" skapas fil main.rh.css
 
 // Settings  STANDARD INSTÄLLNINGAR
 @import 'settings/settings';
