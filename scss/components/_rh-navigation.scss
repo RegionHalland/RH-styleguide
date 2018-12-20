@@ -4,9 +4,11 @@ JOHN  7 DEC 2018
 */
 
 
+
+
 .rh-nav__icon {/* standard global Placera ikonen till höger  */
   	 position: absolute;
-  	 right:1%;top:2%;
+  	 right:1%;top:18%;
 	  text-align:center;
 	  background-color: $rh-icon-nav-bgcolor-second;
 	  height: 30px;
@@ -17,7 +19,6 @@ JOHN  7 DEC 2018
 	  vertical-align: middle;
 	  cursor: pointer;
 }
-
 
 
 
@@ -47,11 +48,13 @@ JOHN  7 DEC 2018
 
 /* Link to subpage **************************************/
 .rh-nav__navigation-card {
+	 cursor: pointer;
     display: block;
-	cursour:pointer;
+		padding-right: 2em;
+		padding-bottom: 2em;
 	position:relative;
 	a{ text-decoration: none;}
-	a:hover{ text-decoration: underline; cursor: pointer;}
+	&:hover{ text-decoration: underline;}
 }
 
 .rh-nav__navigation-card--title {
@@ -69,7 +72,7 @@ JOHN  7 DEC 2018
 .rh-nav__navigation-card--icon {
 	cursor:pointer;
 	position:absolute;
-	right:1%;
+	right:3em;
 	top:1%;
 	width:30px;
 	height:30px;
@@ -97,7 +100,6 @@ ej klar 13 dec 2018
 .rh-nav-onpage__item--active{
 	position: relative;
 	border-left: 3px solid $rh-nav-border-color;
-	border-bottom: 1px solid #e1e1e1;
 }
 .rh-nav-onpage__item--link{
 	width: 100%;
@@ -170,14 +172,10 @@ ej klar 13 dec 2018
 	border-left: 6px solid $rh-main-bordercolor;
     border-right: 1px solid #D1D1D1;
     border-bottom: 1px solid #D1D1D1;
-
 	 	a{display: block;
 		text-decoration: none;
 		color: #000000;}
 	}
-
-
-
 
 
 
@@ -201,16 +199,15 @@ ej klar 13 dec 2018
 }
 
 .rh-nav-mob__box--active { /*AB */
+	padding: 10px;
 	position: relative;
 	background: $rh-box-bgcolor; /* Havsblå/base */
-	padding: 10px;
 	font-family: $rh-main-font;
 	font-style: normal;
 	font-weight: bold;
 	font-size: $rh-nav-fontsize-sublevel;
 	border-left: 4px solid #61A2D8;
 	color:#FFFFFF;
-
 	a{display: block;
 		text-decoration: none;
 		color: #FFFFFF;}
@@ -219,15 +216,62 @@ ej klar 13 dec 2018
 
 
 /* ej klart 17 dec */
-.rh-nav-mob__subpage {
+.rh-nav-mob__subpage {// ingen ikon
+	text-align: left;
+	position: relative;
 	width: 100%;
 	border-top: 1px solid $rh-color-djupbla-light;
 	border-bottom: 1px solid $rh-color-djupbla-light;
-	padding: 10px;
 	background-color: $rh-color-havsbla-light;
 	font-family: $rh-main-font;
 	font-style: normal;
 	font-weight: bold;
 		a{display: block;}
 }
-.rh-nav-mob__subpage--link{	width: 100%;display: block; text-decoration: none; color: #000000;}
+.rh-nav-mob__subpage--icon {// visa ikonen
+	position: absolute;
+	height:44px;
+	top:0px;
+	right:0%;
+	width: 50px;
+	text-align:center;
+	border-left: 1px solid $rh-color-djupbla-light;
+	padding-left: 20px;
+	i{left:30%;top:30%;}
+}
+.rh-nav-mob__subpage--icon-center {left:30%;top:30%!important}
+
+.rh-nav-mob__subpage--link{
+	padding:10px;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+/******** TILBAKA KNAPP **************/
+.rh-button__goback{
+	cursor: pointer;
+		position: relative;
+		height: 40px;
+		a{display: block;
+		text-decoration: none;
+		color: #000000;}
+}
+
+.rh-button__goback--title{
+	font-size: $rh-button-fontsize;
+	color: black;
+	  font-size:inherit;
+	padding-left: 40px;
+	padding-top: 10px;
+	text-decoration: none;;
+}
+
+/* footer ************************************/
+.rh-footer__logo{
+	margin-left: auto;;
+	position: relative;
+	ul li{padding-right:20px; float:left; width: 16%;}
+}

@@ -1,4 +1,9 @@
 
+
+
+
+
+
 /* IKONER ***************************
 https://feathericons.com/
 https://github.com/feathericons/feather#feather
@@ -11,6 +16,17 @@ https://github.com/feathericons/feather#feather
   display: inline-block;
   vertical-align: middle;
  }
+
+ .rh-icon__bgcircle--default{/* rundbakgrund till ikonen */
+  text-align:center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $rh-icons-bgcolor;
+ }
+
 
  .rh-icon__bg--circle{/* rundbakgrund till ikonen */
   text-align:center;
@@ -29,6 +45,31 @@ https://github.com/feathericons/feather#feather
   display: inline-block;
   vertical-align: middle;
  }
+
+
+ .rh-icon__right {/* standard global Placera ikonen till höger  */
+    position: absolute;
+    right:4%;top:18%;
+   text-align:center;
+   height: 30px;
+   width: 30px;
+   display: inline-block;
+   overflow:hidden;
+   vertical-align: middle;
+   cursor: pointer;
+ }
+ .rh-icon__left {/* standard global Placera ikonen till höger  */
+   position: absolute;
+   left:1%;top:18%;
+  text-align:center;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  overflow:hidden;
+  vertical-align: middle;
+  cursor: pointer;
+ }
+
 
 
 .rh-icon__size-standard {width:16px; height:16px;position: absolute;top:25%;left:22%;}

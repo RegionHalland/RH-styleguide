@@ -1,24 +1,26 @@
 /* JOHN.S START 10 DEC 2018
-Färgkoder från Frida figma
-****************************************************************
-Djupblå/base: #004890
-Används på Link titel to subpage och m.fl
+Djupbl�/base: #004890
+Anv�nds p� Link titel to subpage och m.fl
 */
 
 // HUVUD TECKENSNITT
 $rh-main-font: 		Arial;
+$rh-button-fontsize: 1.1; /* em format */
 
-// Färg strang
-$rh-color-djupbla-light: #B2C8DE; /* Djupblå/light */
-$rh-color-havsbla-light: #D0E3F3; /* Havsblå/light */
+// Titel/Rubrik
+$rh-color-title:	        #004890; /* Djupbl�/base */
+
+// F�rg strang
+$rh-color-djupbla-light:  #B2C8DE; /* Djupbl�/light */
+$rh-color-havsbla-light:  #D0E3F3; /* Havsbl�/light */
 
 // MAPPA LANKAR variabel i css:  background: url($get-path-to-assets/site/background.jpg)
 // https://stackoverflow.com/questions/8608498/have-a-variable-in-images-path-in-sass
 //$rh-icons: 							"/rh-cdn/icons";
 
 // ICONS FÄRGER & STORLEK
-$rh-icons-bgcolor:					#D0E3F3; /* Havsblå/light, används till rund bakgrund för ikoner */
-$rh-icons-color: 				   	#004890; /* ikon streck/kontur färg Link to subpage Djupblå/base */
+$rh-icons-bgcolor:					#D0E3F3; /* Havsbl�/light, anv�nds till rund bakgrund för ikoner */
+$rh-icons-color: 				   	#004890; /* ikon streck/kontur f�rg Link to subpage Djupbl�/base */
 
 //
 
@@ -42,26 +44,31 @@ $rh-icons-color: 				   	#004890; /* ikon streck/kontur färg Link to subpage Dj
 - On Page Navigation
 - SubHeader
 - MENU NAVIGATION
-- Navigation / Mobile fällbar box
+- Navigation / Mobile f�llbar box
 */
 $rh-nav-fontsize-toplevel:			  1.5em; /* Font storlek för navmenu */
 $rh-nav-fontsize-sublevel:			  1em; /* Font storlek för navmenu */
 $rh-nav-border-parent:			     	#D1D1D1; /* Grey/Light */
-$rh-nav-bgcolor-parent-normal:		#004890; /* Djupblå/base */
+$rh-nav-bgcolor-parent-normal:		#004890; /* Djupbl�/base */
 $rh-nav-parent-normal-textcolor: 	#ffffff;
 $rh-nav-bgcolor-second-child: 		#ffffff;
 $rh-icon-nav-bgcolor-second: 	    #F4F4F4; /* Grey/Lightest */
-$rh-nav-border-color:	            #004890; /* Djupblå/base */
+$rh-nav-border-color:	            #004890; /* Djupbl�/base */
+
+// BORDER
+$rh-bordercolor-grey:        	    #F4F4F4; /* Grey/Lightest */
+$rh-bordercolor-default:	        #004890; /* Djupbl�/base */
+
 
 // FONT  FÄRG
-$rh-main-color-subpage-title: 		#004890; /* Link to subpage Djupblå/base */
+$rh-main-color-subpage-title: 		#004890; /* Link to subpage Djupbl�/base */
 $rh-main-color-subpage-content: 	#000000; /* text beskrevning */
-$rh-main-color-nav-title: 		  	#004890; /* Djupblå/base */
+$rh-main-color-nav-title: 		  	#004890; /* Djupbl�/base */
 $rh-main-color-nav-header:	   		#000000;
 $rh-main-color-content: 		    	#000000;
 
 // BAKGRUND
-$rh-main-bgcolor: 					      #004890; /* Djupblå/base */
+$rh-main-bgcolor: 					      #004890; /* Djupbl�/base */
 $rh-main-bordercolor: 		    		#004890;
-$rh-subpage-bgcolor: 				      #D0E3F3; /* Havsblå/light */
-$rh-box-bgcolor: 					        #61A2D8; /* Havsblå/base */
+$rh-subpage-bgcolor: 				      #D0E3F3; /* Havsbl�/light */
+$rh-box-bgcolor: 					        #61A2D8; /* Havsbl�/base */

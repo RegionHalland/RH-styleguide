@@ -30,7 +30,9 @@
   "directories": {
     "doc": "docs"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-watch": "^5.0.1"
+  },
   "scripts": {
     "prepublish": "NODE_ENV=production npm run build",
     "build": "gulp dist",

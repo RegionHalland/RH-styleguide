@@ -1,0 +1,72 @@
+/*
+Nyttiga funktioner, animeringar
+*/
+
+
+
+.body-stage{border: 2px dotted #FF0000;}
+.pointer {cursor: pointer;}
+.rh-flex{display:flex;}
+
+/* GLOBAL */
+.rh-hidden{display: none;}
+.rh-show{display: block;}
+
+.rh-trans{
+    cursor: pointer;
+    opacity: 0.6;
+    filter: Alpha(opacity=60); /* IE8 and earlier */
+    &:hover{
+      opacity: 1;
+      filter: Alpha(opacity=100); /* IE8 and earlier */
+    }
+
+}
+
+
+/* loading class */
+.loadingprogress {
+overflow:auto;
+    position: fixed;
+    display:none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 100000;
+}
+
+.rh-loader {
+ border: 8px solid #f3f3f3;
+ border-radius: 50%;
+ border-top: 8px solid #3498db;
+ width: 30px;
+ height: 30px;
+ -webkit-animation: spin 2s linear infinite; /* Safari */
+ animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+ 0% { -webkit-transform: rotate(0deg); }
+ 100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+/* loading class */
+
+/* standard css */
+.animate-fading{animation:fading 2s} @keyframes fading{0%{opacity:0}100%{opacity:1}}
+.animate-opacity{animation:opac 0.8s} @keyframes opac{from{opacity:0} to{opacity:1}}
+.animate-top{animation:animatetop 0.4s} @keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animate-left{animation:animateleft 0.4s} @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right{animation:animateright 0.4s} @keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-bottom{animation:animatebottom 0.4s} @keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-zoom {animation:animatezoom 0.3s} @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}

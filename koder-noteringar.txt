@@ -1,3 +1,8 @@
+### installations sätt
+$ git clone https://github.com/RegionHalland/RH-styleguide.git
+$ cd RH-styleguide
+$ yarn install
+$ in cmd: npm install gulp --global
 
 
 Sträng anrop koder från settings

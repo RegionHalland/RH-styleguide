@@ -14,4 +14,23 @@
 	position:relative;
 	display:table;
 	ul{list-style:none;}
+	li{display:flex;}
 }
+
+
+
+.rh-article__box { /* Articles information */
+	width: 100%;
+	display: block;
+	font-family: inherit;
+	background-color: #FFFFFF;
+	position: relative;
+	background: #FFFFFF;
+	border: 1px solid $rh-bordercolor-grey; /* Grey/Lighter */
+	border-bottom: 3px solid $rh-bordercolor-default;
+	box-sizing: border-box;
+	li{width: 100%;display:inline-block;}
+}
+.rh-article__box--media {width: 100%; height: 200px;}
+.rh-article__box--title {font-size: 2em; padding-top: 0.3em;  padding-left: 0.6em; color: $rh-color-title;}
+.rh-article__box--content {padding: 10px;}

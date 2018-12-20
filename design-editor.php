@@ -1,10 +1,4 @@
-<?php
-$lib_folder = "design-lib";
-$js_folder = "javascript";
-
-$version = "?v=".date("YmdHis");
-?>
-
+ 
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -358,12 +352,6 @@ body.darktheme .trytopnav a {
     <div id="textarea">
       <div id="textareawrapper"><!-- KOD FORM INNEHÅLL -->
         <textarea autocomplete="off" style="font-size:10px;" id="textareaCode" style=" white-space:nowrap; overflow:scroll;" spellcheck="false">
-
-<link rel='stylesheet' href='main.min.css?v=<?php echo $version;?>' type='text/css' media='all' />
-<link rel='stylesheet' href='main.rh.css?v=<?php echo $version;?>' type='text/css' media='all' />
-<script type='text/javascript' src='<?php echo $lib_folder;?>/rh-java.js?v=<?php echo $version;?>'></script>
-<script type='text/javascript' src='<?php echo $js_folder;?>/feather.min.js'></script>
-<!-- end script-->
 
 <?php include("style-html.php");?>
 
