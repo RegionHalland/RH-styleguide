@@ -55,14 +55,14 @@ $ in cmd: npm install gulp --global
 
 Under vintern 2018/2019 definieras grafiskt i programmet Figma designen för de komponenter som kommer att utrryckas som CSS här i Styleguiden. Exempel på den uppmärkning i HTML som krävs kommer också att tillgängliggöras. Planen för implementationen av CSS-delen här i Styleguiden är som följer:
 
-**Styleguide version 0.1. Utveckling klar 12/12**
+**Styleguide version 0.1. Utveckling planerad att vara klar till 12/12 - försenad**
 
 - Huvudmeny  
 - Sekundärmeny  
 - Vänstermeny  
 - Hitta på sidan  
 
-**Styleguide version 0.2. Utveckling klar 19/12**\
+**Styleguide version 0.2. Utveckling planerad att vara klar 19/12 - försenad**\
 Version 0.2 fokuserar på det som visas på en startsida
  
 - Länkstig (Brödsmuleväg)
