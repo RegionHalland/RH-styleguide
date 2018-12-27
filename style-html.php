@@ -12,58 +12,81 @@ function box($t, $w = null){
   <a name=\"".$t."\"></a>
 <div class=\"display-table\" style=\"padding-top:3em;\"><h2><i>$t</i></h2></div>
 <!-- KOPIERA KODEN/CLASS NEDAN  ####  ".$t." ############ -->
-<div class=\"rh-box__container\" style=\"".$w."\">\n";
+<section class=\"rh-box__container\" style=\"".$w."\">\n";
 }
 
-function box_end() {echo "</div><!-- END KOD --->\n";}
+function box_end() {echo "</section><!-- END KOD --->\n";}
 
 $lib_folder = "design-lib";
 $js_folder = "javascript";
 $version = "?v=".date("YmdHis");
 ?>
 
-<link rel='stylesheet' href='main.min.css?v=<?php echo $version;?>' type='text/css' media='all' />
-<link rel='stylesheet' href='main.rh.css?v=<?php echo $version;?>' type='text/css' media='all' />
+<h2>tailwin utility</h2> -
+rh.utility.css https://tailwindcss.com/
+<!-- tailwin styleguide https://unpkg.com/@regionhalland/styleguide-v2@0.8.2/dist/css/main.min.css-->
+<link rel='stylesheet' href='rh.utility.css?<?php echo $version;?>' type='text/css' media='all' />
 
-<script type='text/javascript' src='rh-java.js?v=<?php echo $version;?>'></script>
-<script type='text/javascript' src='icons.js'></script>
+<h2> rh komponenter scss RH-styleguide</h2> - rh.comp.css
+<!-- rh scss RH-styleguide-->
+<link rel='stylesheet' href='rh.comp.css?<?php echo $version;?>' type='text/css' media='all' />
+<h2>rh javascript</h2> - rh-java.js
+<script type='text/javascript' src='rh-java.js?<?php echo $version;?>'></script>
+<h2>feather icons</h2> - feather.js
+<script type='text/javascript' src='feather.min.js'></script>
 <!-- end script-->
 
 
 <?php box("On Page Navigation / rh-nav-onpage__container");?>
-<nav class="rh-nav-onpage__container" style="width:300px;">
-	<h2 class="h4">Sidans innehåll</h2>
-	<ul>
+<nav style="width:300px;">
+	<h2>Sidans innehåll</h2>
+	<ul class="rh-nav-list">
 			 <li class="rh-nav-onpage__item--active"><a href="#" class="rh-nav-onpage__item--link">Lorem ipsum href</a></li>
 		<?php
 			$r="";
 			while($r<4){  $r++;?>
-			 <li class="rh-nav-onpage__item"><a href="#" class="rh-nav-onpage__item--link">Lorem ipsum href</a></li>
+			 <li class="rh-nav-onpage__item"><a href="#" class="rh-nav-onpage__item--link" title="Lorem ipsum href">Lorem ipsum href</a></li>
 		<?php }?>
 	</ul>
 </nav>
 <?php box_end();?>
 
-
 <?php box("rh-article__box","100%");?>
-<div class="col sm-col-6 pr3">
-<article class="rh-article__box " title="Articles information">
-    <div class="rh-article__box--media bg-norepeat" style="background-image:url('http://regionhalland.se/PageFiles/37615/yrken300-150.jpg');"></div>
-    <div class="rh-article__box--title">Articles information</div>
-    <div class="rh-article__box--content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.
-    </div>
-</article>
-</div>
 
-<div class="col sm-col-6">
-<article class="rh-article__box " title="Articles information">
-    <div class="rh-article__box--title">Articles information</div>
-    <div class="rh-article__box--content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.
-    </div>
-</article>
-</div>
+
+        <div class="w-full mx-auto">
+              <ul class="flex flex-wrap items-stretch -mx-4 list-reset">
+
+                      <li class="w-full sm:w-6/12 lg:w-4/12 xl:w-3/12 px-2 mb-8">
+                              <article class="rh-article__box " title="Articles information">
+                                  <div class="rh-article__box--media"><img src="http://regionhalland.se/PageFiles/37615/yrken300-150.jpg" width="100%"></div>
+                                  <div class="rh-article__box--title">Articles information</div>
+                                  <div class="rh-article__box--content">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.
+                                  </div>
+                              </article>
+                      </li>
+
+                      <li class="w-full sm:w-6/12 lg:w-4/12 xl:w-3/12 px-2 mb-8">
+                              <article class="rh-article__box " title="Articles information">
+                                <div class="rh-article__box--media"><img src="http://regionhalland.se/PageFiles/37615/yrken300-150.jpg" width="100%"></div>
+                                <div class="rh-article__box--title">Articles information</div>
+                                  <div class="rh-article__box--content">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.
+                                  </div>
+                              </article>
+                      </li>
+
+                      <li class="w-full sm:w-6/12 lg:w-4/12 xl:w-3/12 px-2 mb-8">
+                            <article class="rh-article__box " title="Articles information">
+                                <div class="rh-article__box--title">Articles information</div>
+                                <div class="rh-article__box--content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.
+                                </div>
+                            </article>
+                      </li>
+             </ul>
+        </div>
 <?php box_end();?>
 
 
@@ -71,7 +94,7 @@ $version = "?v=".date("YmdHis");
 <?php box("rh-button__goback");?>
 <div class="rh-button__goback" title="Tillbaka">
   <a href="#">
-    <div class="rh-icon__left rh-icon__bgcircle--default"><i class="rh-icon__size-standard" data="arrow-left"></i></div>
+    <div class="rh-icon__left rh-icon__bg"><i class="rh-icon__size-standard" data-feather="arrow-left"></i></div>
     <div class="rh-button__goback--title">Tillbaka</div>
   </a>
 </div>
@@ -93,13 +116,14 @@ while($r<5){
 
 
 <?php box("rh-nav__navigation-card","100%");?>
-  <ul>
+	<div class="w-full mx-auto">
+        <ul class="flex flex-wrap items-stretch -mx-4 list-reset">
 <?php
 $r="";
 while($r<3){  $r++;?>
-          <li class="col sm-col-3 rh-nav__navigation-card" title="Link to subpage">
-                    <a href="#">
-                      <div class="rh-icon__right rh-icon__bg--circle rh-bg-icon-subpage"><i class="rh-icon__size-standard" data="arrow-right"></i></div>
+  <li class="w-full sm:w-6/12 lg:w-4/12 px-4 mb-8  rh-nav__navigation-card" title="Link to subpage">
+                      <a href="#">
+                      <div class="rh-nav__navigation-card--icon rh-icon__bg"><i class="rh-icon__size-standard" data-feather="arrow-right"></i></div>
                       <h2 class="rh-nav__navigation-card--title">Link to subpage</h2>
                       <p class="rh-nav__navigation-card--content">This text describes the content that can be found on the subpage</p>
                     </a>
@@ -107,6 +131,7 @@ while($r<3){  $r++;?>
 
 <?php }######## while ?>
   </ul>
+</div>
 <?php box_end();?>
 
 
@@ -129,7 +154,7 @@ while($r<3){  $r++;?>
 <?php box("rh-nav__second-child");?>
         <div style="width:400px;" class="rh-nav__second-child" title="Navigation/Child">
            <a href="#">Navigation/Child 2
-           <div class="rh-nav__icon rh-icon__bg--circle"><i class="rh-icon__size-standard" data="plus"></i></div>
+           <div class="rh-nav__icon rh-icon__bg--circle"><i class="rh-icon__size-standard" data-feather="plus"></i></div>
            </a>
         </div>
 <?php box_end();?>
@@ -152,7 +177,7 @@ while($r<3){  $r++;?>
 <i>rh-nav__second-child--active</i>
 <div  style="width:400px;" class="rh-nav__second-child--active" title="Navigation/Child/Active">
    <a href="#">Navigation/Child/Active 2
-   <div class="rh-nav__icon rh-icon__bg--circle bg-white"><i class="rh-icon__size-standard" data="minus"></i></div>
+   <div class="rh-nav__icon rh-icon__bg--circle bg-white"><i class="rh-icon__size-standard" data-feather="minus"></i></div>
    </a>
 </div>
 
@@ -165,7 +190,7 @@ while($r<3){  $r++;?>
 </div>
 <div class="rh-nav__second-child" title="Navigation/Child">
    <a href="#">Navigation/Child
-   <div class="rh-nav__icon rh-icon__bg--circle"><i class="rh-icon__size-standard" data="plus"></i></div>
+   <div class="rh-nav__icon rh-icon__bg--circle"><i class="rh-icon__size-standard" data-feather="plus"></i></div>
    </a>
 </div>
 <div class="rh-nav__second-child" title="Navigation/Child">
@@ -176,7 +201,7 @@ while($r<3){  $r++;?>
 </div>
 <div class="rh-nav__second-child--active" title="Navigation/Child/Active">
    <a href="#">Navigation/Child/Active
-   <div class="rh-nav__icon rh-icon__bg--circle bg-white"><i class="rh-icon__size-standard" data="minus"></i></div>
+   <div class="rh-nav__icon rh-icon__bg--circle bg-white"><i class="rh-icon__size-standard" data-feather="minus"></i></div>
    </a>
 </div>
 <div class="rh-nav__second-child--sublevel" title="Navigation/Sublevel">
@@ -205,8 +230,8 @@ while($r<3){  $r++;?>
       <div class="rh-nav-mob__box--normal pointer" title="Navigation / Mobile fällbar box"   onclick="RH_showhide_shs('inbox-<?php echo $obj_id;?>','icon-normal-<?php echo $obj_id;?>','icon-active-<?php echo $obj_id;?>');return false">
             Box with the content of the title
               <div class="rh-icon__right">
-                <i  id="icon-normal-<?php echo $obj_id;?>" class="color-havsbla-base " data="plus-circle"></i>
-                <i  id="icon-active-<?php echo $obj_id;?>" class="color-havsbla-base rh-hidden" data="minus-circle"></i>
+                <i  id="icon-normal-<?php echo $obj_id;?>" class="color-havsbla-base " data-feather="plus-circle"></i>
+                <i  id="icon-active-<?php echo $obj_id;?>" class="color-havsbla-base rh-hidden" data-feather="minus-circle"></i>
               </div>
       </div>
       <p id="inbox-<?php echo $obj_id;?>" class="rh-nav-mob__box--content rh-hidden">
@@ -217,7 +242,7 @@ while($r<3){  $r++;?>
              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
              qui officia deserunt mollit anim id est laborum.
           <br>
-          <button class="rh-button color-havsbla-base"  onclick="RH_showhide_shs('inbox-<?php echo $obj_id;?>','icon-normal-<?php echo $obj_id;?>','icon-active-<?php echo $obj_id;?>');return false">Fäll ihop <i data="chevron-up"></i></button>
+          <button class="rh-button color-havsbla-base"  onclick="RH_showhide_shs('inbox-<?php echo $obj_id;?>','icon-normal-<?php echo $obj_id;?>','icon-active-<?php echo $obj_id;?>');return false">Fäll ihop <i data-feather="chevron-up"></i></button>
       </p>
 </div>
 <?php box_end();?>
@@ -228,8 +253,8 @@ while($r<3){  $r++;?>
         <div class="rh-nav-mob__box--active pointer" title="Navigation / Mobile fällbar box" onclick="RH_showhide_shs('inbox-<?php echo $obj_id;?>','icon-normal-<?php echo $obj_id;?>','icon-active-<?php echo $obj_id;?>');return false">
            Box with the content of the title
            <div class="rh-icon__right rh-icon__bg--circle bg-white">
-             <i  id="icon-normal-<?php echo $obj_id;?>" class="rh-icon__size-standard color-havsbla-base" data="plus"></i>
-             <i  id="icon-active-<?php echo $obj_id;?>" class="rh-icon__size-standard color-havsbla-base rh-hidden" data="minus"></i>
+             <i  id="icon-normal-<?php echo $obj_id;?>" class="rh-icon__size-standard color-havsbla-base" data-feather="plus"></i>
+             <i  id="icon-active-<?php echo $obj_id;?>" class="rh-icon__size-standard color-havsbla-base rh-hidden" data-feather="minus"></i>
            </div>
         </div>
             <p id="inbox-<?php echo $obj_id;?>" class="rh-nav-mob__box--content rh-hidden">
@@ -240,7 +265,7 @@ while($r<3){  $r++;?>
                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
                    qui officia deserunt mollit anim id est laborum.
                 <br>
-                <button class="rh-button color-havsbla-base"  onclick="RH_showhide_shs('inbox-<?php echo $obj_id;?>','icon-normal-<?php echo $obj_id;?>','icon-active-<?php echo $obj_id;?>');return false">Fäll ihop <i data="chevron-up"></i></button>
+                <button class="rh-button color-havsbla-base"  onclick="RH_showhide_shs('inbox-<?php echo $obj_id;?>','icon-normal-<?php echo $obj_id;?>','icon-active-<?php echo $obj_id;?>');return false">Fäll ihop <i data-feather="chevron-up"></i></button>
             </p>
 </div>
 <?php box_end();?>
@@ -256,8 +281,8 @@ while($r<3){  $r++;?>
     <li class="rh-nav-mob__subpage">
         <a href="#" onclick="RH_showobj_sh('rh-nav-mob__subpage-active-1','rh-nav-mob__subpage-normal-1');return false" class="rh-nav-mob__subpage--link">Link to subpage
         <div class="rh-nav-mob__subpage--icon">
-          <i id="rh-nav-mob__subpage-normal-1" class="rh-icon__size-16" data="chevron-right"></i>
-          <i id="rh-nav-mob__subpage-active-1" class="rh-hidden  rh-icon__size-16" data="chevron-down"></i>
+          <i id="rh-nav-mob__subpage-normal-1" class="rh-icon__size-16" data-feather="chevron-right"></i>
+          <i id="rh-nav-mob__subpage-active-1" class="rh-hidden  rh-icon__size-16" data-feather="chevron-down"></i>
         </div>
          </a>
     </li>
@@ -293,7 +318,7 @@ while($r<3){  $r++;?>
 <hr><hr>
  feathericons<br>
 <!-- example icon -->
-<i data="circle"></i>
-<i data="eye"></i>
-<i data="heart"></i>
-<i data="feather"></i>
+<i data-feather="circle"></i>
+<i data-feather="eye"></i>
+<i data-feather="heart"></i>
+<i data-feather="feather"></i>

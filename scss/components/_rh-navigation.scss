@@ -1,6 +1,10 @@
 /*
 MEMO
-JOHN  7 DEC 2018
+7 DEC 2018 JOHN
+Kikar igenom och strukturen
+
+27 dec 2019 JOHN
+fixar till px till em, rem
 */
 
 
@@ -11,8 +15,8 @@ JOHN  7 DEC 2018
   	 right:1%;top:18%;
 	  text-align:center;
 	  background-color: $rh-icon-nav-bgcolor-second;
-	  height: 30px;
-	  width: 30px;
+	  height: $rh-icons-size;
+	  width: $rh-icons-size;
 	  border-radius: 50%;
 	  display: inline-block;
 	  overflow:hidden;
@@ -37,7 +41,7 @@ JOHN  7 DEC 2018
 }
 
 .rh-nav__subheader--item--active { /* Aktiv underline */
-	padding-right:6px;
+	padding-right:2rem;
 	text-align:left;
 	position: relative;
 	cursor:pointer;
@@ -50,22 +54,22 @@ JOHN  7 DEC 2018
 .rh-nav__navigation-card {
 	 cursor: pointer;
     display: block;
-		padding-right: 2em;
-		padding-bottom: 2em;
-	position:relative;
-	a{ text-decoration: none;}
-	&:hover{ text-decoration: underline;}
+		padding-right: 2rem;
+		padding-bottom: 2rem;
+		position:relative;
+		a{ text-decoration: none;}
+		&:hover{ text-decoration: underline;}
 }
 
 .rh-nav__navigation-card--title {
-	font-weight: bold;
-	font-size: 20px;
-	color:$rh-main-color-subpage-title;
+		font-weight: bold;
+		font-size: $rh-fontsize-title;
+		color:$rh-main-color-subpage-title;
 }
 
 .rh-nav__navigation-card--content {
-	padding-right:35px;
-	font-size: 15px;
+	padding-right:3rem;
+	font-size:$rh-fontsize-content;
 	color:$rh-main-color-subpage-content;
 }
 
@@ -73,41 +77,39 @@ JOHN  7 DEC 2018
 	cursor:pointer;
 	position:absolute;
 	right:3em;
-	top:1%;
-	width:30px;
-	height:30px;
+	top:0;
+	width:$rh-icons-size;
+	height:$rh-icons-size;
 }
 
 
 
 
-/*  On Page Navigation ********************************
-ej klar 13 dec 2018
-*/
-.rh-nav-onpage__container{
+/*  Sidans innehåll On Page Navigation *********************************/
+.rh-nav-list{
 	position: relative;
-	ul{display: inline-block;width:100%;}
-	ul li{display: inline-block;width:100%;}
+	list-style-type:none;
+	 display:inline;
 }
+
 .rh-nav-onpage__item{
 	width: 100%;
 	position: relative;
-	border-left: 3px solid #E4E4E4;/* Grey/Lighter */
+	border-left: 0.2rem solid #E4E4E4;/* Grey/Lighter */
 	&:hover{@extend .rh-nav-onpage__item--active;}
 	&:focus{@extend .rh-nav-onpage__item--active;}
 		a{display: block;}
 }
 .rh-nav-onpage__item--active{
 	position: relative;
-	border-left: 3px solid $rh-nav-border-color;
+	border-left: 0.2rem solid $rh-nav-border-color;
 }
 .rh-nav-onpage__item--link{
 	width: 100%;
-	padding: 10px;
-	font-size: 16px;
-	display: block;
+	padding: 0.5rem;
+	font-size: 1rem;
 	text-decoration: none;
-	color: $rh-main-color-nav-title;
+	color:$rh-color-link;
 	a{display: block;}
 }
 
@@ -117,7 +119,7 @@ ej klar 13 dec 2018
 .rh-nav__second-parent { /* A Parent */
 	position: relative;
 	background: $rh-nav-bgcolor-parent-normal;
-	padding: 10px;
+	padding: 1rem;
 	font-family: $rh-main-font;
 	font-style: normal;
 	font-weight: bold;
@@ -132,12 +134,12 @@ ej klar 13 dec 2018
 .rh-nav__second-child { /*AB Child */
 	position: relative;
 	background: #FFF;
-	padding: 10px;
+	padding: 1rem;
 	font-family: $rh-main-font;
 	font-style: normal;
 	font-weight: normal;
 	font-size: $rh-nav-fontsize-sublevel;
-	border: 1px solid #D1D1D1;
+	border: 0.1rem solid $rh-color-grey-light;
 
 	a{display: block;
 	  text-decoration: none;
@@ -149,13 +151,13 @@ ej klar 13 dec 2018
 
 .rh-nav__second-child--active { /*AB Child */
 	position: relative;
-	background: #D0E3F3;
-	padding: 10px;
+	background: $rh-subpage-bgcolor;
+	padding: 1rem;
 	font-family: $rh-main-font;
 	font-style: normal;
 	font-weight: bold;
 	font-size: $rh-nav-fontsize-sublevel;
-	border: 1px solid #D1D1D1;
+	border: 0.1rem solid $rh-nav-border-parent;
 
 		a{display: block;
 		text-decoration: none;
@@ -165,13 +167,13 @@ ej klar 13 dec 2018
 .rh-nav__second-child--sublevel { /*ABC Child/Sublevel */
 	position: relative;
 	background: #F5F8FB;
-	padding: 10px;
+	padding: 1rem;
 	padding-left:26px;
 	font-family: $rh-main-font;
 	font-size: $rh-nav-fontsize-sublevel;
-	border-left: 6px solid $rh-main-bordercolor;
-    border-right: 1px solid #D1D1D1;
-    border-bottom: 1px solid #D1D1D1;
+	border-left: 0.5rem solid $rh-main-bordercolor;
+    border-right: 0.1rem solid $rh-nav-border-parent;
+    border-bottom: 0.1rem solid $rh-nav-border-parent;
 	 	a{display: block;
 		text-decoration: none;
 		color: #000000;}
@@ -186,12 +188,12 @@ ej klar 13 dec 2018
 .rh-nav-mob__box--normal {
 	position: relative;
 	background: #F4F4F4; /* Grey/Lightest */
-	padding: 10px;
+	padding: 1rem;
 	font-family: $rh-main-font;
 	font-style: normal;
 	font-weight: bold;
 	font-size: $rh-nav-fontsize-sublevel;
-	border-left: 4px solid #61A2D8;
+	border-left: 0.5rem solid $rh-box-bgcolor;
 
 			a{display: block;
 		  text-decoration: none;
@@ -199,14 +201,14 @@ ej klar 13 dec 2018
 }
 
 .rh-nav-mob__box--active { /*AB */
-	padding: 10px;
+	padding: 1rem;
 	position: relative;
 	background: $rh-box-bgcolor; /* Havsblå/base */
 	font-family: $rh-main-font;
 	font-style: normal;
 	font-weight: bold;
 	font-size: $rh-nav-fontsize-sublevel;
-	border-left: 4px solid #61A2D8;
+	border-left: 0.5rem solid $rh-box-bgcolor;
 	color:#FFFFFF;
 	a{display: block;
 		text-decoration: none;
@@ -230,42 +232,42 @@ ej klar 13 dec 2018
 }
 .rh-nav-mob__subpage--icon {// visa ikonen
 	position: absolute;
-	height:44px;
-	top:0px;
+	height:3rem;
+	top:0;
 	right:0%;
-	width: 50px;
+	width: 4rem;
 	text-align:center;
-	border-left: 1px solid $rh-color-djupbla-light;
-	padding-left: 20px;
+	border-left: 0.1rem solid $rh-color-djupbla-light;
+	padding-left: 2rem;
 	i{left:30%;top:30%;}
 }
 .rh-nav-mob__subpage--icon-center {left:30%;top:30%!important}
 
 .rh-nav-mob__subpage--link{
-	padding:10px;
+	padding:1rem;
 	width: 100%;
 	display: block;
 	text-decoration: none;
-	color: #000000;
+	color:$rh-color-link;
 }
 
 
-/******** TILBAKA KNAPP **************/
+/******** BUTTON  TILBAKA KNAPP **************/
 .rh-button__goback{
 	cursor: pointer;
 		position: relative;
-		height: 40px;
+		height: $rh-icons-size;
 		a{display: block;
 		text-decoration: none;
-		color: #000000;}
+		color: $rh-color-link;}
 }
 
 .rh-button__goback--title{
-	font-size: $rh-button-fontsize;
-	color: black;
+		font-size: $rh-button-fontsize;
+		color: $rh-color-link;
 	  font-size:inherit;
-	padding-left: 40px;
-	padding-top: 10px;
+	padding-left: $rh-button-padding-left;
+	padding-top: $rh-button-padding-top;
 	text-decoration: none;;
 }
 
@@ -273,5 +275,5 @@ ej klar 13 dec 2018
 .rh-footer__logo{
 	margin-left: auto;;
 	position: relative;
-	ul li{padding-right:20px; float:left; width: 16%;}
+	ul li{padding-right:1rem; float:left; width: 16%;}
 }

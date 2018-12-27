@@ -32,7 +32,8 @@ gulp.task('css:dist', () => {
 		.pipe(sass())
 		.pipe(postcss(plugins))
 		// ändra namn tips - https://stackoverflow.com/questions/32535178/gulp-sass-how-to-properly-name-the-output-css
-		.pipe(rename({suffix: '.rh'}))
+    .pipe(rename('rh.comp.css'))
+		// v2 .pipe(rename({suffix: '.rh.comp'}))
 		//.pipe(rename({'rhstyle.min'}))
 		.pipe(browsersync.stream())
 		.pipe(sourcemaps.write())

@@ -3,19 +3,27 @@
 body, html {font-family: $rh-main-font;}
 
 
-
 /* rh COLOR *****************************************/
-.color-havsbla-base{color: #61A2D8;} /* Havsblå/base */
-.color-djupbla-light{color: #B2C8DE;} /* Djupblå/light */
+.rh-color__base {color:$rh-color-djupbla-base;}
+.rh-color__havsbla-base{color: $rh-color-havsbla-light;} /* Havsblå/base */
+.rh-color__djupbla-light{color: $rh-color-djupbla-light;} /* Djupblå/light */
+
+.rh-color-title {color:$rh-color-djupbla-base;}
+.rh-color-content {color:$rh-color-black;}
+
+/* text */
+.rh-text-link {color:$rh-color-djupbla-base; text-decoration: none;}
 
 /* BAKGRUND *********************************/
-.bg-havsbla{background-color: #D0E3F3;} /* Havsblå/light */
-.bg-djupbla{background-color: #D0E3F3;} /* Djupblå/base */
+.rh-bg__icon {background-color: $rh-color-havsbla-light;}
+.rh-bg__button {background-color: $rh-color-djupbla-base;}
 
-.bg-white{background-color:#FFF;}
-.bg-black{background-color:#000;}
-.bg-grey{background-color:#CCC;}
-.bg-grey-light{background-color:#e1e1e1;}
+.rh-bg__havsbla{background-color: $rh-color-havsbla-light;} /* Havsblå/light */
+.rh-bg__djupbla{background-color: $rh-color-djupbla-base;} /* Djupblå/base */
+.rh-bg__white{background-color:$rh-color-white;}
+.rh-bg__black{background-color:$rh-color-black;}
+.rh-bg__grey{background-color:$rh-color-grey;}
+.rh-bg__grey-light{background-color:$rh-color-grey-light;}
 
 
 .bg-norepeat {

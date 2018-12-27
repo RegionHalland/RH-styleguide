@@ -1,4 +1,4 @@
- 
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -351,7 +351,7 @@ body.darktheme .trytopnav a {
   <div id="textareacontainer">
     <div id="textarea">
       <div id="textareawrapper"><!-- KOD FORM INNEHÅLL -->
-        <textarea autocomplete="off" style="font-size:10px;" id="textareaCode" style=" white-space:nowrap; overflow:scroll;" spellcheck="false">
+        <textarea autocomplete="off" style="font-size:1em;" id="textareaCode" style=" white-space:nowrap; overflow:scroll;" spellcheck="false">
 
 <?php include("style-html.php");?>
 

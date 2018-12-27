@@ -10,37 +10,19 @@ https://github.com/feathericons/feather#feather
 */
 .rh-icon__bg{/* rund bakgrund till ikonen */
   text-align:center;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
- }
-
- .rh-icon__bgcircle--default{/* rundbakgrund till ikonen */
-  text-align:center;
-  height: 30px;
-  width: 30px;
+  height:$rh-icons-size;
+  width:$rh-icons-size;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
   background-color: $rh-icons-bgcolor;
  }
 
-
- .rh-icon__bg--circle{/* rundbakgrund till ikonen */
+ 
+ .rh-icon__bg-circle{/* rundbakgrund till ikonen */
   text-align:center;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
- }
-
- .rh-icon__bgcircle{/* rundbakgrund till ikonen */
-  text-align:center;
-  height: 30px;
-  width: 30px;
+  height: $rh-icons-size;
+  width: $rh-icons-size;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
@@ -51,8 +33,8 @@ https://github.com/feathericons/feather#feather
     position: absolute;
     right:4%;top:18%;
    text-align:center;
-   height: 30px;
-   width: 30px;
+   height: $rh-icons-size;
+   width:$rh-icons-size;
    display: inline-block;
    overflow:hidden;
    vertical-align: middle;
@@ -62,8 +44,8 @@ https://github.com/feathericons/feather#feather
    position: absolute;
    left:1%;top:18%;
   text-align:center;
-  height: 30px;
-  width: 30px;
+  height: $rh-icons-size;
+  width: $rh-icons-size;
   display: inline-block;
   overflow:hidden;
   vertical-align: middle;
@@ -76,7 +58,7 @@ https://github.com/feathericons/feather#feather
 .rh-icon__size-10 {width:10px; height:10px;}
 .rh-icon__size-16 {width:16px; height:16px;position: absolute;top:25%;left:22%;}
 .rh-icon__size-20 {width:20px; height:20px;}
-.rh-icon__size-30 {width:30px; height:30px;}
+.rh-icon__size-30 {width:$rh-icons-size; height:$rh-icons-size;}
 .rh-icon__size-40 {width:40px; height:40px;}
 .rh-icon__size-50 {width:50px; height:50px;}
 

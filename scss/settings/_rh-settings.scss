@@ -5,22 +5,37 @@ Anv�nds p� Link titel to subpage och m.fl
 
 // HUVUD TECKENSNITT
 $rh-main-font: 		Arial;
-$rh-button-fontsize: 1.1; /* em format */
+$rh-fontsize-title: 2em; /* navvigation-card */
+$rh-fontsize-content: 1em;
 
 // Titel/Rubrik
+$rh-color-link:	          #004890; /* */
 $rh-color-title:	        #004890; /* Djupbl�/base */
 
-// F�rg strang
+
+// RH color
+$rh-color-white:	        #FFFFFF; /*  */
+$rh-color-black:	        #000000; /*  */
 $rh-color-djupbla-light:  #B2C8DE; /* Djupbl�/light */
+$rh-color-djupbla-base:	  #004890; /* Djupbl�/base */
 $rh-color-havsbla-light:  #D0E3F3; /* Havsbl�/light */
+$rh-color-grey:	      		#e1e1e1; /* Grey */
+$rh-color-grey-light:			#f0f0f0; /* Grey/Light */
+
 
 // MAPPA LANKAR variabel i css:  background: url($get-path-to-assets/site/background.jpg)
 // https://stackoverflow.com/questions/8608498/have-a-variable-in-images-path-in-sass
 //$rh-icons: 							"/rh-cdn/icons";
 
+// button standard
+$rh-button-fontsize:           1.1em;
+$rh-button-padding-left:      2.6rem; /* standard globalt för mellanrum från <icon> <titel> */
+$rh-button-padding-top:        0.9rem;
+
 // ICONS FÄRGER & STORLEK
-$rh-icons-bgcolor:					#D0E3F3; /* Havsbl�/light, anv�nds till rund bakgrund för ikoner */
-$rh-icons-color: 				   	#004890; /* ikon streck/kontur f�rg Link to subpage Djupbl�/base */
+$rh-icons-size:                2rem;
+$rh-icons-bgcolor:					$rh-color-havsbla-light; /* Havsbl�/light, anv�nds till rund bakgrund för ikoner */
+$rh-icons-color: 				   	$rh-color-djupbla-base; /* ikon streck/kontur f�rg Link to subpage Djupbl�/base */
 
 //
 
