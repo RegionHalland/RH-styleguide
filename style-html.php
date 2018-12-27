@@ -94,7 +94,7 @@ rh.utility.css https://tailwindcss.com/
 <?php box("rh-button__goback");?>
 <div class="rh-button__goback" title="Tillbaka">
   <a href="#">
-    <div class="rh-icon__left rh-icon__bg"><i class="rh-icon__size-standard" data-feather="arrow-left"></i></div>
+    <div class="rh-icon-left rh-icon-bg"><i class="rh-icon-size-standard" data-feather="arrow-left"></i></div>
     <div class="rh-button__goback--title">Tillbaka</div>
   </a>
 </div>
@@ -123,7 +123,7 @@ $r="";
 while($r<3){  $r++;?>
   <li class="w-full sm:w-6/12 lg:w-4/12 px-4 mb-8  rh-nav__navigation-card" title="Link to subpage">
                       <a href="#">
-                      <div class="rh-nav__navigation-card--icon rh-icon__bg"><i class="rh-icon__size-standard" data-feather="arrow-right"></i></div>
+                      <div class="rh-nav__navigation-card--icon rh-icon-bg"><i class="rh-icon-size-standard" data-feather="arrow-right"></i></div>
                       <h2 class="rh-nav__navigation-card--title">Link to subpage</h2>
                       <p class="rh-nav__navigation-card--content">This text describes the content that can be found on the subpage</p>
                     </a>
@@ -154,7 +154,7 @@ while($r<3){  $r++;?>
 <?php box("rh-nav__second-child");?>
         <div style="width:400px;" class="rh-nav__second-child" title="Navigation/Child">
            <a href="#">Navigation/Child 2
-           <div class="rh-nav__icon rh-icon__bg--circle"><i class="rh-icon__size-standard" data-feather="plus"></i></div>
+           <div class="rh-nav__icon rh-icon__bg--circle"><i class="rh-icon-size-standard" data-feather="plus"></i></div>
            </a>
         </div>
 <?php box_end();?>
@@ -177,7 +177,7 @@ while($r<3){  $r++;?>
 <i>rh-nav__second-child--active</i>
 <div  style="width:400px;" class="rh-nav__second-child--active" title="Navigation/Child/Active">
    <a href="#">Navigation/Child/Active 2
-   <div class="rh-nav__icon rh-icon__bg--circle bg-white"><i class="rh-icon__size-standard" data-feather="minus"></i></div>
+   <div class="rh-nav__icon rh-icon__bg--circle bg-white"><i class="rh-icon-size-standard" data-feather="minus"></i></div>
    </a>
 </div>
 
@@ -190,7 +190,7 @@ while($r<3){  $r++;?>
 </div>
 <div class="rh-nav__second-child" title="Navigation/Child">
    <a href="#">Navigation/Child
-   <div class="rh-nav__icon rh-icon__bg--circle"><i class="rh-icon__size-standard" data-feather="plus"></i></div>
+   <div class="rh-nav__icon rh-icon__bg--circle"><i class="rh-icon-size-standard" data-feather="plus"></i></div>
    </a>
 </div>
 <div class="rh-nav__second-child" title="Navigation/Child">
@@ -201,7 +201,7 @@ while($r<3){  $r++;?>
 </div>
 <div class="rh-nav__second-child--active" title="Navigation/Child/Active">
    <a href="#">Navigation/Child/Active
-   <div class="rh-nav__icon rh-icon__bg--circle bg-white"><i class="rh-icon__size-standard" data-feather="minus"></i></div>
+   <div class="rh-nav__icon rh-icon__bg--circle bg-white"><i class="rh-icon-size-standard" data-feather="minus"></i></div>
    </a>
 </div>
 <div class="rh-nav__second-child--sublevel" title="Navigation/Sublevel">
@@ -229,10 +229,10 @@ while($r<3){  $r++;?>
 <div class="rh-nav-mob__box--container">
       <div class="rh-nav-mob__box--normal pointer" title="Navigation / Mobile fällbar box"   onclick="RH_showhide_shs('inbox-<?php echo $obj_id;?>','icon-normal-<?php echo $obj_id;?>','icon-active-<?php echo $obj_id;?>');return false">
             Box with the content of the title
-              <div class="rh-icon__right">
-                <i  id="icon-normal-<?php echo $obj_id;?>" class="color-havsbla-base " data-feather="plus-circle"></i>
-                <i  id="icon-active-<?php echo $obj_id;?>" class="color-havsbla-base rh-hidden" data-feather="minus-circle"></i>
-              </div>
+            <div class="rh-icon-right rh-icon-bg-circle rh-bg-white">
+              <i  id="icon-normal-<?php echo $obj_id;?>" class="rh-icon-size-standard rh-color-havsbla-base" data-feather="plus"></i>
+              <i  id="icon-active-<?php echo $obj_id;?>" class="rh-icon-size-standard rh-color-havsbla-base rh-hidden" data-feather="minus"></i>
+            </div>
       </div>
       <p id="inbox-<?php echo $obj_id;?>" class="rh-nav-mob__box--content rh-hidden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -252,9 +252,9 @@ while($r<3){  $r++;?>
 <div class="rh-nav-mob__box--container">
         <div class="rh-nav-mob__box--active pointer" title="Navigation / Mobile fällbar box" onclick="RH_showhide_shs('inbox-<?php echo $obj_id;?>','icon-normal-<?php echo $obj_id;?>','icon-active-<?php echo $obj_id;?>');return false">
            Box with the content of the title
-           <div class="rh-icon__right rh-icon__bg--circle bg-white">
-             <i  id="icon-normal-<?php echo $obj_id;?>" class="rh-icon__size-standard color-havsbla-base" data-feather="plus"></i>
-             <i  id="icon-active-<?php echo $obj_id;?>" class="rh-icon__size-standard color-havsbla-base rh-hidden" data-feather="minus"></i>
+           <div class="rh-icon-right rh-icon-bg-circle rh-bg-white rh-color-primary">
+             <i  id="icon-normal-<?php echo $obj_id;?>" class="rh-icon-size-standard" data-feather="plus">x</i>
+             <i  id="icon-active-<?php echo $obj_id;?>" class="rh-icon-size-standard rh-hidden" data-feather="minus">o</i>
            </div>
         </div>
             <p id="inbox-<?php echo $obj_id;?>" class="rh-nav-mob__box--content rh-hidden">

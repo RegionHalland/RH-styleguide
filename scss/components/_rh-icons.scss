@@ -1,14 +1,8 @@
-
-
-
-
-
-
 /* IKONER ***************************
 https://feathericons.com/
 https://github.com/feathericons/feather#feather
 */
-.rh-icon__bg{/* rund bakgrund till ikonen */
+.rh-icon-bg{/* rund bakgrund till ikonen */
   text-align:center;
   height:$rh-icons-size;
   width:$rh-icons-size;
@@ -18,8 +12,8 @@ https://github.com/feathericons/feather#feather
   background-color: $rh-icons-bgcolor;
  }
 
- 
- .rh-icon__bg-circle{/* rundbakgrund till ikonen */
+
+ .rh-icon-bg-circle{/* rundbakgrund till ikonen */
   text-align:center;
   height: $rh-icons-size;
   width: $rh-icons-size;
@@ -29,7 +23,7 @@ https://github.com/feathericons/feather#feather
  }
 
 
- .rh-icon__right {/* standard global Placera ikonen till höger  */
+ .rh-icon-right {/* standard global Placera ikonen till höger  */
     position: absolute;
     right:4%;top:18%;
    text-align:center;
@@ -40,7 +34,7 @@ https://github.com/feathericons/feather#feather
    vertical-align: middle;
    cursor: pointer;
  }
- .rh-icon__left {/* standard global Placera ikonen till höger  */
+ .rh-icon-left {/* standard global Placera ikonen till höger  */
    position: absolute;
    left:1%;top:18%;
   text-align:center;
@@ -54,13 +48,15 @@ https://github.com/feathericons/feather#feather
 
 
 
-.rh-icon__size-standard {width:16px; height:16px;position: absolute;top:25%;left:22%;}
-.rh-icon__size-10 {width:10px; height:10px;}
-.rh-icon__size-16 {width:16px; height:16px;position: absolute;top:25%;left:22%;}
-.rh-icon__size-20 {width:20px; height:20px;}
+
+.rh-icon-size-standard {width:1rem; height:1rem;position: absolute;top:25%;left:22%;}
+.rh-icon__size-10 {width:0.5rem; height:0.5rem;}
+.rh-icon__size-16 {width:0.6rem; height:0.6rem; position: absolute;top:25%;left:22%;}
+.rh-icon__size-20 {width:0.8rem; height:0.8rem;}
 .rh-icon__size-30 {width:$rh-icons-size; height:$rh-icons-size;}
-.rh-icon__size-40 {width:40px; height:40px;}
-.rh-icon__size-50 {width:50px; height:50px;}
+.rh-icon__size-40 {width:1rem; height:1rem;}
+.rh-icon__size-50 {width:1.3rem; height:1.3rem;}
+
 
 
 /* BAKGRUND *********************************/

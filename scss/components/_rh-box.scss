@@ -26,11 +26,11 @@
 	background-color: #FFFFFF;
 	position: relative;
 	background: #FFFFFF;
-	border: 1px solid $rh-bordercolor-grey; /* Grey/Lighter */
-	border-bottom: 3px solid $rh-bordercolor-default;
+	border: 0.2rem solid $rh-bordercolor-grey; /* Grey/Lighter */
+	border-bottom: 1rem solid $rh-bordercolor-default;
 	box-sizing: border-box;
 	li{width: 100%;display:inline-block;}
 }
-.rh-article__box--media {width: 100%; height: 200px;}
+.rh-article__box--media {width: 100%;}
 .rh-article__box--title {font-size: 2em; padding-top: 0.3em;  padding-left: 0.6em; color: $rh-color-title;}
-.rh-article__box--content {padding: 10px;}
+.rh-article__box--content {padding: 1rem;}

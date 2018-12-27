@@ -4,9 +4,10 @@ body, html {font-family: $rh-main-font;}
 
 
 /* rh COLOR *****************************************/
-.rh-color__base {color:$rh-color-djupbla-base;}
-.rh-color__havsbla-base{color: $rh-color-havsbla-light;} /* Havsblå/base */
-.rh-color__djupbla-light{color: $rh-color-djupbla-light;} /* Djupblå/light */
+.rh-color-primary {color:$rh-color-djupbla-base;}/* Djupbl�/base */
+.rh-color-base {color:$rh-color-djupbla-base;}/* Djupbl�/base */
+.rh-color-havsbla-base{color: $rh-color-havsbla-light;} /* Havsblå/base */
+.rh-color-djupbla-light{color: $rh-color-djupbla-light;} /* Djupblå/light */
 
 .rh-color-title {color:$rh-color-djupbla-base;}
 .rh-color-content {color:$rh-color-black;}
@@ -15,15 +16,15 @@ body, html {font-family: $rh-main-font;}
 .rh-text-link {color:$rh-color-djupbla-base; text-decoration: none;}
 
 /* BAKGRUND *********************************/
-.rh-bg__icon {background-color: $rh-color-havsbla-light;}
-.rh-bg__button {background-color: $rh-color-djupbla-base;}
+.rh-bg-icon {background-color: $rh-color-havsbla-light;}
+.rh-bg-button {background-color: $rh-color-djupbla-base;}
 
-.rh-bg__havsbla{background-color: $rh-color-havsbla-light;} /* Havsblå/light */
-.rh-bg__djupbla{background-color: $rh-color-djupbla-base;} /* Djupblå/base */
-.rh-bg__white{background-color:$rh-color-white;}
-.rh-bg__black{background-color:$rh-color-black;}
-.rh-bg__grey{background-color:$rh-color-grey;}
-.rh-bg__grey-light{background-color:$rh-color-grey-light;}
+.rh-bg-havsbla{background-color: $rh-color-havsbla-light;} /* Havsblå/light */
+.rh-bg-djupbla{background-color: $rh-color-djupbla-base;} /* Djupblå/base */
+.rh-bg-white{background-color:$rh-color-white;}
+.rh-bg-black{background-color:$rh-color-black;}
+.rh-bg-grey{background-color:$rh-color-grey;}
+.rh-bg-grey-light{background-color:$rh-color-grey-light;}
 
 
 .bg-norepeat {
