@@ -36,6 +36,10 @@ rh.utility.css https://tailwindcss.com/
 <script type='text/javascript' src='feather.min.js'></script>
 <!-- end script-->
 
+<style>
+
+</style>
+
 
 <?php box("On Page Navigation / rh-nav-onpage__container");?>
 <nav style="width:300px;">
@@ -115,20 +119,19 @@ while($r<5){
 <?php box_end();?>
 
 
-<?php box("rh-nav__navigation-card","100%");?>
+<?php box("rh-card","100%");?>
 	<div class="w-full mx-auto">
         <ul class="flex flex-wrap items-stretch -mx-4 list-reset">
 <?php
 $r="";
 while($r<3){  $r++;?>
-  <li class="w-full sm:w-6/12 lg:w-4/12 px-4 mb-8  rh-nav__navigation-card" title="Link to subpage">
-                      <a href="#">
-                      <div class="rh-nav__navigation-card--icon rh-icon-bg"><i class="rh-icon-size-standard" data-feather="arrow-right"></i></div>
-                      <h2 class="rh-nav__navigation-card--title">Link to subpage</h2>
-                      <p class="rh-nav__navigation-card--content">This text describes the content that can be found on the subpage</p>
+  <li class="w-full sm:w-6/12 lg:w-4/12 px-4 mb-8" title="Link to subpage">
+                      <a href="#" class="rh-card">
+                      <div class="rh-card-icon rh-icon-bg"><i class="rh-icon-size-standard" data-feather="arrow-right"></i></div>
+                      <h2 class="rh-card-title">Link to subpage</h2>
+                      <p class="rh-card-content">This text describes the content that can be found on the subpage</p>
                     </a>
           </li>
-
 <?php }######## while ?>
   </ul>
 </div>

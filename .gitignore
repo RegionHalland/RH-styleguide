@@ -6,3 +6,5 @@ dist/*
 
 # Node Modules ignorera ddessa
 node_modules/*
+
+.remote-sync.json

@@ -4,7 +4,9 @@ body, html {font-family: $rh-main-font;}
 
 
 /* rh COLOR *****************************************/
-.rh-color-primary {color:$rh-color-djupbla-base;}/* Djupbl�/base */
+.rh-primary-color {color:$rh-primary-color;}/* Djupbl�/base */
+.rh-primary-bg {background-color:$rh-primary-color;}/* Djupbl�/base */
+
 .rh-color-base {color:$rh-color-djupbla-base;}/* Djupbl�/base */
 .rh-color-havsbla-base{color: $rh-color-havsbla-light;} /* Havsblå/base */
 .rh-color-djupbla-light{color: $rh-color-djupbla-light;} /* Djupblå/light */
