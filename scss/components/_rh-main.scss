@@ -16,6 +16,8 @@ body, html {font-family: $rh-main-font;}
 
 /* text */
 .rh-text-link {color:$rh-color-djupbla-base; text-decoration: none;}
+.rh-text-black{color:$rh-color-black;}
+.rh-link-item {text-decoration: none; }
 
 /* BAKGRUND *********************************/
 .rh-bg-icon {background-color: $rh-color-havsbla-light;}
@@ -27,24 +29,11 @@ body, html {font-family: $rh-main-font;}
 .rh-bg-black{background-color:$rh-color-black;}
 .rh-bg-grey{background-color:$rh-color-grey;}
 .rh-bg-grey-light{background-color:$rh-color-grey-light;}
+.rh-bg-green{background-color:$rh-color-green;}
 
 
 .bg-norepeat {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-/* buttons etc ****************************************/
-.rh-button {
-  position: relative;
-  cursor: pointer;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  appearance:none;
-  background:none;
-  border:0;
-  border-radius:0;
-  font-size:inherit;
-  line-height:1;padding:0;
 }

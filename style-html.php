@@ -12,7 +12,7 @@ function box($t, $w = null){
   <a name=\"".$t."\"></a>
 <div class=\"display-table\" style=\"padding-top:3em;\"><h2><i>$t</i></h2></div>
 <!-- KOPIERA KODEN/CLASS NEDAN  ####  ".$t." ############ -->
-<section class=\"rh-box__container\" style=\"".$w."\">\n";
+<section class=\"rh-box-container\" style=\"".$w."\">\n";
 }
 
 function box_end() {echo "</section><!-- END KOD --->\n";}
@@ -25,11 +25,12 @@ $version = "?v=".date("YmdHis");
 <h2>tailwin utility</h2> -
 rh.utility.css https://tailwindcss.com/
 <!-- tailwin styleguide https://unpkg.com/@regionhalland/styleguide-v2@0.8.2/dist/css/main.min.css-->
-<link rel='stylesheet' href='rh.utility.css?<?php echo $version;?>' type='text/css' media='all' />
+<link rel='stylesheet' href='dist/rh.utility.css?<?php echo $version;?>' type='text/css' media='all' />
 
-<h2> rh komponenter scss RH-styleguide</h2> - rh.comp.css
+<h2> rh komponenter scss RH-styleguide</h2> - dist/rh.comp.css
 <!-- rh scss RH-styleguide-->
-<link rel='stylesheet' href='rh.comp.css?<?php echo $version;?>' type='text/css' media='all' />
+<link rel='stylesheet' href='dist/rh.comp.css?<?php echo $version;?>' type='text/css' media='all' />
+
 <h2>rh javascript</h2> - rh-java.js
 <script type='text/javascript' src='rh-java.js?<?php echo $version;?>'></script>
 <h2>feather icons</h2> - feather.js
@@ -39,6 +40,49 @@ rh.utility.css https://tailwindcss.com/
 <style>
 
 </style>
+
+
+
+
+<?php box("rh-toplink","100%");?>
+
+
+      <div class="flex mb-2">
+       <a class="rh-toplink-item" href="#">
+        <span class="rh-toplink-icon">
+       <i class="rh-icon-size-primary" data-feather="arrow-right"></i></span> Top link</a>
+       </div>
+
+       <div class="rh-flex">
+
+                <a class="rh-toplink-item" href="#">
+                  <span class="rh-toplink-icon">
+                   <i class="rh-icon-size-primary" data-feather="alert-triangle"></i></span>
+                        Driftinformation</a>
+
+              <a class="rh-toplink-item" id="" onclick="toggleBar();return false" href="#">
+                <span class="rh-toplink-icon">
+                 <i class="rh-icon-size-primary" data-feather="headphones"></i></span>
+                        Talande Webb</a>
+
+              <a class="rh-toplink-item" id="" onclick="toggleBar();return false" href="#">
+                <span class="rh-toplink-icon">
+                 <i class="rh-icon-size-primary" data-feather="log-in"></i></span>
+                      E-tjänster</a>
+
+          <a class="rh-toplink-item" href="#">
+                <span class="rh-icon-item rh-bg-green">
+                <i class="rh-icon-size-primary" data-feather="alert-triangle"></i>
+                </span>
+            Lorem Ipsum
+          </a>
+
+
+      </div>
+<?php box_end();?>
+
+
+
 
 
 <?php box("On Page Navigation / rh-nav-onpage__container");?>
@@ -55,36 +99,36 @@ rh.utility.css https://tailwindcss.com/
 </nav>
 <?php box_end();?>
 
-<?php box("rh-article__box","100%");?>
+<?php box("rh-article-box","100%");?>
 
 
         <div class="w-full mx-auto">
               <ul class="flex flex-wrap items-stretch -mx-4 list-reset">
 
                       <li class="w-full sm:w-6/12 lg:w-4/12 xl:w-3/12 px-2 mb-8">
-                              <article class="rh-article__box " title="Articles information">
-                                  <div class="rh-article__box--media"><img src="http://regionhalland.se/PageFiles/37615/yrken300-150.jpg" width="100%"></div>
-                                  <div class="rh-article__box--title">Articles information</div>
-                                  <div class="rh-article__box--content">
+                              <article class="rh-article-box " title="Articles information">
+                                  <div class="rh-article-box-media"><img src="http://regionhalland.se/PageFiles/37615/yrken300-150.jpg" width="100%"></div>
+                                  <div class="rh-article-box-title">Articles information</div>
+                                  <div class="rh-article-box-content">
                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.
                                   </div>
                               </article>
                       </li>
 
                       <li class="w-full sm:w-6/12 lg:w-4/12 xl:w-3/12 px-2 mb-8">
-                              <article class="rh-article__box " title="Articles information">
-                                <div class="rh-article__box--media"><img src="http://regionhalland.se/PageFiles/37615/yrken300-150.jpg" width="100%"></div>
-                                <div class="rh-article__box--title">Articles information</div>
-                                  <div class="rh-article__box--content">
+                              <article class="rh-article-box " title="Articles information">
+                                <div class="rh-article-box-media"><img src="http://regionhalland.se/PageFiles/37615/yrken300-150.jpg" width="100%"></div>
+                                <div class="rh-article-box-title">Articles information</div>
+                                  <div class="rh-article-box-content">
                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.
                                   </div>
                               </article>
                       </li>
 
                       <li class="w-full sm:w-6/12 lg:w-4/12 xl:w-3/12 px-2 mb-8">
-                            <article class="rh-article__box " title="Articles information">
-                                <div class="rh-article__box--title">Articles information</div>
-                                <div class="rh-article__box--content">
+                            <article class="rh-article-box " title="Articles information">
+                                <div class="rh-article-box-title">Articles information</div>
+                                <div class="rh-article-box-content">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.
                                 </div>
                             </article>
@@ -95,12 +139,21 @@ rh.utility.css https://tailwindcss.com/
 
 
 
-<?php box("rh-button__goback");?>
-<div class="rh-button__goback" title="Tillbaka">
-  <a href="#">
+<?php box("rh-button-goback");?>
+<div class="rh-button-goback mb-2">
+  <a href="#"  title="Tillbaka">
     <div class="rh-icon-left rh-icon-bg"><i class="rh-icon-size-standard" data-feather="arrow-left"></i></div>
-    <div class="rh-button__goback--title">Tillbaka</div>
+    <div class="rh-button-goback-title">Tillbaka</div>
   </a>
+</div>
+
+<div class="mt-2">
+    <a class="rh-link-item rh-text-link" href="#" title="Tillbaka">
+          <span class="rh-icon-item rh-bg-havsbla">
+          <i class="rh-icon-size-primary" data-feather="arrow-left"></i>
+          </span>
+      Tillbaka
+    </a>
 </div>
 <?php box_end();?>
 
@@ -125,8 +178,8 @@ while($r<5){
 <?php
 $r="";
 while($r<3){  $r++;?>
-  <li class="w-full sm:w-6/12 lg:w-4/12 px-4 mb-8" title="Link to subpage">
-                      <a href="#" class="rh-card">
+  <li class="w-full sm:w-6/12 lg:w-4/12 px-4 mb-8 rh-card " title="Link to subpage">
+                      <a href="#" class="no-underline">
                       <div class="rh-card-icon rh-icon-bg"><i class="rh-icon-size-standard" data-feather="arrow-right"></i></div>
                       <h2 class="rh-card-title">Link to subpage</h2>
                       <p class="rh-card-content">This text describes the content that can be found on the subpage</p>

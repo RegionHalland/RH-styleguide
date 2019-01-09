@@ -3,12 +3,32 @@ Nyttiga funktioner, animeringar
 */
 
 
+.rh-pointer {cursor: pointer;}
+
 .rh-body_stage{border: 2px dotted #FF0000;}
 .rh-body_local{border: 2px dotted #0000FF;}
 
 
-.pointer {cursor: pointer;}
+/* används för ikon centrering */
 .rh-flex{display:flex;}
+.rh-items-center{align-items:center}
+.rh-inline-flex{display:inline-flex}
+.rh-justify-end{justify-content:flex-end}
+.rh-justify-center{justify-content:center}
+.rh-justify-between{justify-content:space-between}
+.rh-justify-around{justify-content:space-around}
+
+
+.rh-box-container{
+	width: 100%;
+	font-family: $rh-main-font;
+	position:relative;
+	display:table;
+	ul{list-style:none;}
+	li{display:flex;}
+}
+
+
 
 /* GLOBAL */
 .rh-hidden{display: none;}

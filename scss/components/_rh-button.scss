@@ -1,0 +1,55 @@
+/* buttons etc ****************************************/
+.rh-button {
+  position: relative;
+  cursor: pointer;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  appearance:none;
+  background:none;
+  border:0;
+  border-radius:0;
+  font-size:inherit;
+  line-height:1;padding:0;
+}
+
+
+
+.rh-button-icon-bg{/* rund bakgrund till ikonen */
+  text-align:center;
+  height:$rh-icon-size;
+  width:$rh-icon-size;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $rh-icon-bgcolor;
+ }
+
+.rh-button-title{
+		font-size: $rh-button-fontsize;
+		color: $rh-color-link;
+	  font-size:inherit;
+	padding-left: $rh-button-padding-left;
+	padding-top: $rh-button-padding-top;
+	text-decoration: none;
+}
+
+
+
+/******** BUTTON  TILBAKA KNAPP **************/
+.rh-button-goback{
+	cursor: pointer;
+		position: relative;
+		height: $rh-icon-size;
+		a{display: block;
+		text-decoration: none;
+		color: $rh-color-link;}
+}
+
+.rh-button-goback-title{
+		font-size: $rh-button-fontsize;
+		color: $rh-color-link;
+	  font-size:inherit;
+	padding-left: $rh-button-padding-left;
+	padding-top: $rh-button-padding-top;
+	text-decoration: none;;
+}

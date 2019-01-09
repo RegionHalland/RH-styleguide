@@ -9,13 +9,54 @@ fixar till px till em, rem
 
 
 
-.rh-nav__icon {/* standard global Placera ikonen till höger  */
+/* ikon buttons, ikonen visas på vänster sida, text visas höger, används header toplinks*/
+.rh-toplink {
+    cursor: pointer;
+		position: relative;
+    padding-right: 1.5rem;
+    color: $rh-color-black;
+    text-decoration: none;
+}
+.rh-toplink-item {
+    text-decoration: none;
+    align-items:center;
+    color: $rh-color-black;
+    margin-right: 1.5rem;
+}
+
+
+.rh-toplink-icon {
+    background-color: $rh-icon-bg-toplink;
+    height: $rh-icon-size;
+    width: $rh-icon-size;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+
+.rh-toplink-title{
+		font-size: $rh-button-fontsize;
+		color: $rh-color-black;
+	  font-size:inherit;
+	  padding-left: $rh-button-padding-left;
+	  padding-top: $rh-button-padding-top;
+  	text-decoration: none;
+}
+
+
+
+
+
+/* standard global Placera ikonen till höger  */
+.rh-nav__icon {
   	 position: absolute;
   	 right:1%;top:18%;
 	  text-align:center;
 	  background-color: $rh-icon-nav-bgcolor-second;
-	  height: $rh-icons-size;
-	  width: $rh-icons-size;
+	  height: $rh-icon-size;
+	  width: $rh-icon-size;
 	  border-radius: 50%;
 	  display: inline-block;
 	  overflow:hidden;
@@ -58,7 +99,6 @@ fixar till px till em, rem
 		position:relative;
 		a{ text-decoration: none;}
 		a:hover{ text-decoration: underline;}
-		&:hover{ text-decoration: underline;}
 }
 
 .rh-card-title {
@@ -79,8 +119,8 @@ fixar till px till em, rem
 	position:absolute;
 	right:1rem;
 	top:0;
-	width:$rh-icons-size;
-	height:$rh-icons-size;
+	width:$rh-icon-size;
+	height:$rh-icon-size;
 }
 
 
@@ -252,24 +292,6 @@ fixar till px till em, rem
 }
 
 
-/******** BUTTON  TILBAKA KNAPP **************/
-.rh-button__goback{
-	cursor: pointer;
-		position: relative;
-		height: $rh-icons-size;
-		a{display: block;
-		text-decoration: none;
-		color: $rh-color-link;}
-}
-
-.rh-button__goback--title{
-		font-size: $rh-button-fontsize;
-		color: $rh-color-link;
-	  font-size:inherit;
-	padding-left: $rh-button-padding-left;
-	padding-top: $rh-button-padding-top;
-	text-decoration: none;;
-}
 
 /* footer ************************************/
 .rh-footer__logo{
